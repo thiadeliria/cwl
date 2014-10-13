@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">ChangWeiLai</string>
+    <string name="browse">让我看看 ></string>
+    <string name="action_settings">Settings</string>
+    <string name="mock_logo">Mock logo</string>
+    <string name="username">用户名 / 手机号</string>
+    <string name="password">密码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="sign_up">注册新账户</string>
+    <string name="login">登录</string>
+    <string name="remember_me">记住我的密码</string>
+    <string name="head_image">Head Image</string>
+    <string name="signup_title">注册</string>
+    <string name="name">姓名</string>
+    <string name="gender">性别</string>
+    <string-array name="gender_array">
+        <item>男</item>
+        <item>女</item>
+        <item>其他</item>
+    </string-array>
+    <string name="email">邮件</string>
+    <string name="email_example">user@example.com</string>
+    <string name="phone">手机号</string>
+    <string name="birthdate">出生日期</string>
+    <string name="address">地址</string>
+</resources>
