@@ -34,15 +34,11 @@
 
         <TextView
             android:id="@+id/name_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_toLeftOf="@+id/name_input"
             android:layout_marginBottom="21dp"
             android:layout_marginRight="12dp"
-            android:paddingTop="5dp"
-            android:text="@string/name"
-            android:textColor="#ffffff" />
+            android:text="@string/name" />
 
         <EditText
             android:id="@+id/name_input"
@@ -56,15 +52,11 @@
 
         <TextView
             android:id="@+id/gender_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_marginBottom="21dp"
             android:layout_marginRight="9dp"
             android:layout_toLeftOf="@+id/gender_spinner"
-            android:paddingTop="5dp"
-            android:text="@string/gender"
-            android:textColor="#ffffff" />
+            android:text="@string/gender" />
         
 <!-- 		incomplete -->
         <Spinner
@@ -76,15 +68,11 @@
 
         <TextView
             android:id="@+id/email_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/name_prompt"
             android:layout_marginBottom="21dp"
-            android:paddingTop="5dp"
-            android:text="@string/email"
-            android:textColor="#ffffff" />
+            android:text="@string/email" />
 
         <EditText
             android:id="@+id/email_input"
@@ -101,15 +89,11 @@
 
         <TextView
             android:id="@+id/phone_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/email_prompt"
             android:layout_marginBottom="21dp"
-            android:paddingTop="5dp"
-            android:text="@string/phone"
-            android:textColor="#ffffff" />
+            android:text="@string/phone" />
 
         <EditText
             android:id="@+id/phone_input"
@@ -125,15 +109,11 @@
 
         <TextView
             android:id="@+id/password_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/phone_prompt"
             android:layout_marginBottom="21dp"
-            android:paddingTop="5dp"
-            android:text="@string/password"
-            android:textColor="#ffffff" />
+            android:text="@string/password" />
 
         <EditText
             android:id="@+id/password_input"
@@ -149,15 +129,11 @@
 
         <TextView
             android:id="@+id/confirm_password_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_below="@+id/password_prompt"
             android:layout_marginBottom="21dp"
             android:layout_alignRight="@+id/name_prompt"
-            android:paddingTop="5dp"
-            android:text="@string/password_confirm"
-            android:textColor="#ffffff" />
+            android:text="@string/password_confirm" />
 
         <EditText
             android:id="@+id/confirm_password_input"
@@ -173,16 +149,12 @@
 
         <TextView
             android:id="@+id/birthdate_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_below="@+id/confirm_password_prompt"
             android:layout_marginBottom="21dp"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_toLeftOf="@+id/birthdate_input"
-            android:paddingTop="5dp"
-            android:text="@string/birthdate"
-            android:textColor="#ffffff" />
+            android:text="@string/birthdate" />
 
 <!-- 		should be picker -->
         <EditText
@@ -198,15 +170,11 @@
         
         <TextView
             android:id="@+id/address_prompt"
-            android:style="@style/PromptText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/PromptText"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/birthdate_prompt"
             android:layout_marginBottom="131dp"
-            android:paddingTop="5dp"
-            android:text="@string/address"
-            android:textColor="#ffffff" />
+            android:text="@string/address" />
 
         <EditText
             android:id="@+id/address_input"

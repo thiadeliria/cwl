@@ -19,7 +19,10 @@
     
     <style name="PromptText">
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">19.5sp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
     </style>
 
 </resources>

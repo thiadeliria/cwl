@@ -66,23 +66,27 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
-    <TextView
+    <Button
         android:id="@+id/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/password_input"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/browse"
+        android:background="@null"
+        android:gravity="left"
         android:text="@string/sign_up"
         android:textColor="#ffffff"
         android:textSize="15sp" />
 
-    <TextView
+    <Button
         android:id="@+id/browse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/password_input"
+        android:background="@null"
+        android:gravity="right"
         android:text="@string/browse"
         android:textColor="#ffffff"
         android:textSize="15sp" />
