@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/head_image"
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
         android:contentDescription="@string/head_image"
         android:src="@drawable/head" />
@@ -167,6 +167,14 @@
             android:background="@drawable/edit_text_oval"
             android:inputType="text"
             android:padding="3dp" />
+<!--         <DatePicker -->
+<!-- 	        android:id="@+id/birthdatePicker" -->
+<!-- 	        android:layout_width="0dp" -->
+<!-- 	        android:layout_height="wrap_content" -->
+<!--             android:layout_alignLeft="@+id/name_input" -->
+<!-- 	        android:layout_alignParentRight="true" -->
+<!-- 	        android:layout_below="@+id/confirm_password_prompt" -->
+<!--             android:padding="3dp" /> -->
         
         <TextView
             android:id="@+id/address_prompt"
