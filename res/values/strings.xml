@@ -25,4 +25,21 @@
     <string name="phone">手机号</string>
     <string name="birthdate">出生日期</string>
     <string name="address">地址</string>
+    
+    <!-- Sign up Components -->
+    <string name="usrEmpty">请输入用户名</string>
+    <string name="pwdEmpty">请输入密码</string>
+    <string name="uNameEmpty">请输入您的姓名</string>
+    <string name="emailEmpty">请输入您的邮箱</string>
+    <string name="phoneEmpty">请输入您的手机号</string>
+    <string name="conPwdEmpty">请再次输入您的密码</string>
+    <string name="conPwdErr">您两次输入的密码不一致</string>
+    <string name="birEmpty">请输入您的年龄</string>
+    <string name="addrEmpty">请输入您的地址</string>
+    <string name="signupSucess">注册成功</string>
+    <string name="loginSucess">登录成功</string>
+    <string name="choice">请选择</string>
+    <string name="nameLenErr">姓名不足2个字</string>
+    <string name="phoneLenErr">请输入正确的手机号</string>
+    <string name="pwdLenErr">密码不少于6位</string>
 </resources>
