@@ -33,7 +33,7 @@
     <string name="title_section3">Section THREE</string>
     <string name="my_teachers">我的教师</string>
     <string name="my_students">我的学生</string>
-    <string name="my_fave_teachers">我的收藏教师</string>
     <string name="my_fave_students">我的收藏学生</string>
+    <string name="my_fave_teachers">我的收藏教师</string>
     <string name="my_schedule">我的课程计划</string>
 </resources>

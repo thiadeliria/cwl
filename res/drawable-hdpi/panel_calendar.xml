@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <bitmap android:src="@drawable/panel_button" />
+    </item>
+    
+    <item android:top="5dp" android:left="20dp">
+        <bitmap android:src="@drawable/calendar_icon_dark" />
+    </item>
+
+
+</layer-list>
