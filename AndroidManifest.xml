@@ -4,6 +4,8 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+<!--min SDK version changed from 8 to 11 to kill errors on Calendar in fragment_homepage.xml.
+    Wish they would shut up. -->
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
