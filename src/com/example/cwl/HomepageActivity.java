@@ -1,11 +1,16 @@
 package com.example.cwl;
 
 import android.app.ActionBar;
-import android.app.ActionBar.TabListener;
+import android.app.ActionBar.Tab;
 import android.app.Activity;
+import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
 public class HomepageActivity extends Activity {
 	public static Context appContext;
@@ -16,33 +21,68 @@ public class HomepageActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_homepage);
 
-		// ActionBar gets initiated
-		ActionBar actionbar = getActionBar();
-		// Tell the ActionBar we want to use Tabs.
-		actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		// initiating 4 tabs and set text to it.
-		ActionBar.Tab HomepageTab = actionbar.newTab().setText("首页");
-		ActionBar.Tab ProfileTab = actionbar.newTab().setText("个人主页");
-		ActionBar.Tab NotifTab = actionbar.newTab().setText("消息");
-		ActionBar.Tab SettingsTab = actionbar.newTab().setText("设置");
+		// ActionBar is initiated
+		ActionBar actionBar = getActionBar();
+		// Tell the ActionBar we want to use Tabs
+		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-		// create the two fragments we want to use for display content
+		// initiating 4 tabs and set text to it (to be replaced by icons+text)
+		// for icons use setIcon(R.drawable.image)
+		ActionBar.Tab HomepageTab = actionBar.newTab().setText("首页");
+		ActionBar.Tab ProfileTab = actionBar.newTab().setText("个人主页");
+		ActionBar.Tab NotifTab = actionBar.newTab().setText("消息");
+		ActionBar.Tab SettingsTab = actionBar.newTab().setText("设置");
+
+		// create the 4 fragments to display content
 		Fragment HomepageFragment = new Fragment();
 		Fragment ProfileFragment = new Fragment();
 		Fragment NotifFragment = new Fragment();
 		Fragment SettingsFragment = new Fragment();
 
-		// set the Tab listener. Now we can listen for clicks.
-		HomepageTab.setTabListener(new TabListener(HomepageFragment));
-		ProfileTab.setTabListener(new TabListener(ProfileFragment));
+		// set the Tab listener. Now we can listen for clicks
+		HomepageTab.setTabListener(new ATabListener(HomepageFragment));
+		ProfileTab.setTabListener(new ATabListener(ProfileFragment));
+		NotifTab.setTabListener(new ATabListener(NotifFragment));
+		SettingsTab.setTabListener(new ATabListener(SettingsFragment));
 
 		// add the two tabs to the action bar
-		actionbar.addTab(HomepageTab);
-		actionbar.addTab(ProfileTab);
-		actionbar.addTab(NotifTab);
-		actionbar.addTab(SettingsTab);
+		actionBar.addTab(HomepageTab);
+		actionBar.addTab(ProfileTab);
+		actionBar.addTab(NotifTab);
+		actionBar.addTab(SettingsTab);
 	}
 }
+
+class ATabListener implements ActionBar.TabListener {
+	public Fragment fragment;
+
+	public ATabListener(Fragment fragment) {
+		this.fragment = fragment;
+	}
+
+	// note on FragmentTransaction: provides API for fragment operations
+	// ie. add, remove, replace fragment are each a transaction
+	// each callback the Listener gets, it adds transaction to the FT.
+	@Override
+	public void onTabSelected(Tab tab, FragmentTransaction ft) {
+		ft.replace(R.id.fragment_container, fragment);
+	}
+
+	@Override
+	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+		ft.remove(fragment);
+	}
+
+	@Override
+	public void onTabReselected(Tab tab, FragmentTransaction ft) {
+		// nothing, but below is a possible text message
+		//		Toast.makeText(HomepageActivity.appContext, "Reselected!",
+        //	    Toast.LENGTH_LONG).show();
+	}
+
+}
+
+// default generated code below. probably useless.
 
 // public class HomepageActivity extends ActionBarActivity implements
 // ActionBar.TabListener {
