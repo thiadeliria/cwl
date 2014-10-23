@@ -16,11 +16,13 @@ public class SignUp extends ActionBarActivity {
 	private Button submit;
 	private Spinner spinner;
 	
+	private int sex = -1;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_signup);
-		
+				
 		spinner = (Spinner) findViewById(R.id.gender_spinner);
 		
 		usr = (EditText) findViewById(R.id.name_input);
@@ -33,7 +35,7 @@ public class SignUp extends ActionBarActivity {
 		
 		submit = (Button) findViewById(R.id.signin_button);
 		
-		String[] items = getResources().getStringArray(R.array.gender_array);
+		final String[] items = getResources().getStringArray(R.array.gender_array);
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,items);
 		spinner.setAdapter(adapter);
 		
@@ -41,7 +43,19 @@ public class SignUp extends ActionBarActivity {
 			@Override
 			public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 				String gender = arg0.getItemAtPosition(arg2).toString();
-				Toast.makeText(SignUp.this, gender, Toast.LENGTH_SHORT).show();
+				//Toast.makeText(SignUp.this, gender, Toast.LENGTH_SHORT).show();
+				if (gender.equals("男")) {
+					sex = 0;
+					Toast.makeText(SignUp.this, String.valueOf(sex), Toast.LENGTH_LONG).show();
+				}
+				else if (gender.equals("女")) {
+					sex = 1;
+					Toast.makeText(SignUp.this, String.valueOf(sex), Toast.LENGTH_LONG).show();
+				}
+				else if (gender.equals("其他")) {
+					sex = 2;
+					Toast.makeText(SignUp.this, String.valueOf(sex), Toast.LENGTH_LONG).show();
+				}
 			}
 
 			@Override
