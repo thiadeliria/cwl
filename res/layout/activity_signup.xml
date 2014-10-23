@@ -62,8 +62,8 @@
 <!-- 		size comes up weird -->
         <Spinner
             android:id="@+id/gender_spinner"
-            android:layout_width="45dp"
-            android:layout_height="26dp"
+            android:layout_width="52dp"
+            android:layout_height="36dp"
             android:layout_alignParentRight="true"
             android:entries="@array/gender_array" />
 
