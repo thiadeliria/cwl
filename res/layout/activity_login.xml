@@ -49,8 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/password_input"
         android:layout_below="@+id/password_input"
-        android:marginTop="3dp"
-        android:marginBottom="11dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="11dp"
         android:checked="false"
         android:text="@string/remember_me"
         android:textColor="#22526c" />
