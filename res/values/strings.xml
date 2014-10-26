@@ -1,38 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--App basics -->
     <string name="app_name">ChangWeiLai</string>
-    <string name="browse">让我看看</string>
-    <string name="action_settings">Settings</string>
-    <string name="mock_logo">Mock logo</string>
+    
+    <!--Login -->
+    <string name="login">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="sign_up_new_account">注册新账户</string>
     <string name="username">用户名 / 手机号</string>
     <string name="password">密码</string>
     <string name="password_confirm">确认密码</string>
-    <string name="sign_up_new_account">注册新账户</string>
-    <string name="login">登录</string>
     <string name="remember_me">记住我的密码</string>
+    <string name="browse">让我看看</string>
+    <string name="action_settings">Settings</string>
+    <string name="mock_logo">Mock logo</string>
+    
+    <!--Sign up -->
     <string name="head_image">Head Image</string>
-    <string name="sign_up">注册</string>
     <string name="name">姓名</string>
     <string name="gender">性别</string>
-
     <string-array name="gender_array">
         <item>男</item>
         <item>女</item>
         <item>其他</item>
     </string-array>
-
     <string name="email">邮件</string>
     <string name="email_example">user@example.com</string>
     <string name="phone">手机号</string>
     <string name="birthdate">出生日期</string>
     <string name="address">地址</string>
+    
+    <!--Homepage -->
     <string name="homepage">首页</string>
     <string name="my_teachers">我的教师</string>
     <string name="my_students">我的学生</string>
     <string name="my_fave_students">我的收藏学生</string>
     <string name="my_fave_teachers">我的收藏教师</string>
     <string name="my_schedule">我的课程计划</string>
+    
+    <!--Profile -->
+    <string name="profile_pic">Profile picture</string>
+    <string name="username_eg">李小胖</string>
+    <string name="address_eg">河北省石家庄市</string>
+    <string name="interests_eg">声乐，琵琶</string>
+    <string name="bio">简介</string>
+    <string name="education">学历</string>
+    <string name="comments">评价</string>
 
     <!-- Sign up Components -->
     <string name="usrEmpty">请输入用户名</string>
