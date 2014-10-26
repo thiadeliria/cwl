@@ -8,14 +8,14 @@
         android:centerColor="#ffde54"
         android:centerX="51%"
         android:centerY="50%"
-        android:endColor="#ffe060"
+        android:endColor="#ffdb47"
         android:gradientRadius="430"
         android:startColor="#ffd836"
         android:type="sweep" />
 
-    <size
-        android:height="wrap_content"
-        android:width="236dp" />
+<!--     <size -->
+<!--         android:height="match_parent" -->
+<!--         android:width="236dp" /> -->
 
     <stroke
         android:width="2dp"

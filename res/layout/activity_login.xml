@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
-    android:paddingBottom="11dp"
+    android:paddingBottom="1dp"
     android:paddingLeft="21dp"
     android:paddingRight="21dp"
     android:paddingTop="32dp" >
@@ -17,7 +17,7 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/mock_logo"
         android:paddingBottom="22dp"
-        android:src="@drawable/cwl_logo_curly_blue" />
+        android:src="@drawable/cwl_logo_curly" />
 
     <EditText
         android:id="@+id/username_input"

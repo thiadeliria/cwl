@@ -1,4 +1,5 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
@@ -6,7 +7,7 @@
     android:background="#ffffff"
     android:orientation="vertical"
     android:paddingBottom="14dp"
-    tools:context="com.example.cwl.HomepageActivity$PlaceholderFragment" >
+    tools:context="com.example.cwl.HomepageActivity$PlaceholderFragment" > 
 
     <!-- Will link to full page of 课程计划 with calendar. -->
 
@@ -111,7 +112,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
-            android:attr="/buttonBarButtonStyle"
             android:orientation="horizontal" >
 
             <!-- Each button links to profile pg of selected user -->

@@ -13,8 +13,8 @@
         android:startColor="#cae3f0"
         android:type="radial" />
 
-    <size
-        android:height="match_parent"
-        android:width="match_parent" />
+<!--     <size -->
+<!--         android:height="match_parent" -->
+<!--         android:width="match_parent" /> -->
 
 </shape>

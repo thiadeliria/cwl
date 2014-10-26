@@ -12,15 +12,7 @@ public class AFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// Inflate the layout for this fragment
-		View view = inflater.inflate(R.layout.afragment, container, false);
+		return inflater.inflate(R.layout.fragment_homepage, container, false);
 	}
 
 }
-// public View onCreateView(LayoutInflater inflater, ViewGroup container,
-// Bundle savedInstanceState) {
-// // Inflate layout
-// View view = inflater.inflate(R.layout.tab, container, false);
-// TextView textview = (TextView) view.findViewById(R.id.tabtextview);
-// textview.setText(R.string.One);
-// return view;
-// }
