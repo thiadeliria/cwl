@@ -1,146 +1,193 @@
-<LinearLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical"
-    android:paddingBottom="14dp"
-    tools:context="com.example.cwl.HomepageActivity$PlaceholderFragment" > 
+    android:orientation="vertical" >
 
-    <!-- Will link to full page of 课程计划 with calendar. -->
-
-    <Button
-        android:id="@+id/my_schedule"
-        style="@style/PanelText"
-        android:layout_width="match_parent"
-        android:layout_height="39dp"
-        android:background="@drawable/panel_button"
-        android:gravity="left"
-        android:paddingLeft="8dp"
-        android:paddingTop="9dp"
-        android:text="@string/my_schedule" />
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView1"
+    <LinearLayout
+        android:id="@+id/grand_parent_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="horizontal" >
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="14dp" >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="horizontal" >
+        <!-- tools:context="com.example.cwl.HomepageActivity$PlaceholderFragment" -->
 
-            <CalendarView
-                android:id="@+id/calendarView1"
+        <RelativeLayout
+            android:id="@+id/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Button will link to full page of 课程计划 with calendar. -->
+
+            <Button
+                android:id="@+id/my_schedule"
+                style="@style/PanelText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:firstDayOfWeek="2"
-                android:shownWeekCount="2" />
-        </LinearLayout>
-    </HorizontalScrollView>
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/my_schedule" />
 
-    <!-- Will link to full page of 我的教师, each user listed. -->
+            <ImageView
+                android:id="@+id/calendar_icon"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/calendar_icon"
+                android:paddingTop="2dp"
+                android:src="@drawable/icon_calendar_dark" />
+        </RelativeLayout>
 
-    <Button
-        android:id="@+id/my_teachers"
-        style="@style/PanelText"
-        android:layout_width="match_parent"
-        android:layout_height="39dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/panel_button"
-        android:gravity="left"
-        android:paddingLeft="8dp"
-        android:paddingTop="9dp"
-        android:text="@string/my_teachers" />
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="horizontal" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:orientation="horizontal" >
+                <CalendarView
+                    android:id="@+id/calendarView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:firstDayOfWeek="2"
+                    android:shownWeekCount="2" />
+            </LinearLayout>
+        </HorizontalScrollView>
 
-            <!-- To be button. Will link to full page of 我的收藏教师, each user listed. -->
+        <RelativeLayout
+            android:id="@+id/button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
-            <Button
-                android:id="@+id/teacher_button_1"
-                android:layout_width="86dp"
-                android:layout_height="86dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp" />
-
-            <Button
-                android:id="@+id/teacher_button_2"
-                android:layout_width="86dp"
-                android:layout_height="86dp"
-                android:layout_marginRight="12dp" />
-        </LinearLayout>
-    </HorizontalScrollView>
-
-    <!-- To be button. Will link to full page of 课程计划 with calendar. -->
-
-    <Button
-        android:id="@+id/my_fave_teachers"
-        style="@style/PanelText"
-        android:layout_width="match_parent"
-        android:layout_height="39dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/panel_button"
-        android:gravity="left"
-        android:paddingLeft="8dp"
-        android:paddingTop="9dp"
-        android:text="@string/my_fave_teachers" />
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="horizontal" >
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="4dp"
-            android:orientation="horizontal" >
-
-            <!-- Each button links to profile pg of selected user -->
+            <!-- Will link to full page of 我的教师, each user listed. -->
 
             <Button
-                android:id="@+id/fave_button_1"
-                android:layout_width="86dp"
-                android:layout_height="86dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp" />
+                android:id="@+id/my_teachers"
+                style="@style/PanelText"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/my_teachers" />
+
+            <ImageView
+                android:id="@+id/teacher_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:contentDescription="@string/teacher_icon"
+                android:src="@drawable/icon_teacher_dark" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal" >
+
+                <!-- To be button. Will link to full page of 我的收藏教师, each user listed. -->
+
+                <Button
+                    android:id="@+id/teacher_button_1"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp" />
+
+                <Button
+                    android:id="@+id/teacher_button_2"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/button_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Will link to full page of 我的收藏, each user listed. -->
 
             <Button
-                android:id="@+id/fave_button_2"
-                android:layout_width="86dp"
-                android:layout_height="86dp"
-                android:layout_marginRight="12dp" />
+                android:id="@+id/my_fave_teachers"
+                style="@style/PanelText"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/my_fave_teachers" />
 
-            <Button
-                android:id="@+id/fave_button_3"
-                android:layout_width="86dp"
-                android:layout_height="86dp"
-                android:layout_marginRight="12dp" />
+            <ImageView
+                android:id="@+id/fave_teacher_icon"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"
+                android:contentDescription="@string/fave_teacher_icon"
+                android:src="@drawable/icon_favourite_dark" />
+        </RelativeLayout>
 
-            <Button
-                android:id="@+id/fave_button_4"
-                android:layout_width="86dp"
-                android:layout_height="86dp"
-                android:layout_marginRight="12dp" />
-        </LinearLayout>
-    </HorizontalScrollView>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
 
-</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal" >
+
+                <!-- Each button links to profile pg of selected user -->
+
+                <Button
+                    android:id="@+id/fave_button_1"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp" />
+
+                <Button
+                    android:id="@+id/fave_button_2"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp" />
+
+                <Button
+                    android:id="@+id/fave_button_3"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp" />
+
+                <Button
+                    android:id="@+id/fave_button_4"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>

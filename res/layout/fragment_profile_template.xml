@@ -1,0 +1,195 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:orientation="vertical"
+        android:padding="9dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/panel_background"
+            android:padding="12dp" >
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_length="124dp"
+                android:contentDescription="@string/profile_pic"
+                android:src="@drawable/icon_teacher_dark" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/profile_pic"
+                android:text="@string/username_eg"
+                android:textColor="#0d212b"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/username"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="5dp"
+                android:text="@string/address_eg"
+                android:textColor="#a6a6a6"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/username"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="5dp"
+                android:text="@string/interests_eg"
+                android:textColor="#a6a6a6"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttons_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp" >
+
+            <Button
+                android:id="@+id/add_to_favourites"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/filler_view"
+                android:background="@drawable/button_yellow"
+                android:paddingLeft="27dp"
+                android:text="@string/add_to_favourites"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/favourites_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/favourites_icon"
+                android:src="@drawable/icon_add_contact" />
+
+            <View
+                android:id="@+id/filler_view"
+                android:layout_width="1dp"
+                android:layout_height="44dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/request_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/filler_view"
+                android:background="@drawable/button_red"
+                android:paddingLeft="30dp"
+                android:text="@string/request_teacher"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/teacher_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/request_teacher"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/teacher_icon"
+                android:src="@drawable/icon_teacher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bio_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/panel_background"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/bio_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textColor="#0d212b"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/bio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bio_title"
+                android:text="@string/bio_eg"
+                android:textColor="#a6a6a6"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edu_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/panel_background"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/edu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edu"
+                android:textColor="#0d212b"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/edu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edu_title"
+                android:text="@string/edu_eg"
+                android:textColor="#a6a6a6"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/comments_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/panel_background"
+            android:padding="12dp" >
+
+            <TextView
+                android:id="@+id/comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:textColor="#0d212b"
+                android:textSize="18sp" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

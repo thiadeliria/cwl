@@ -38,14 +38,23 @@
     <string name="my_fave_students">我的收藏学生</string>
     <string name="my_fave_teachers">我的收藏教师</string>
     <string name="my_schedule">我的课程计划</string>
+    <string name="calendar_icon">calendar icon</string>
+    <string name="teacher_icon">teacher icon</string>
+    <string name="fave_teacher_icon">favourite icon</string>
     
     <!--Profile -->
     <string name="profile_pic">Profile picture</string>
     <string name="username_eg">李小胖</string>
     <string name="address_eg">河北省石家庄市</string>
-    <string name="interests_eg">声乐，琵琶</string>
+    <string name="interests_eg">琵琶</string>
+    <string name="add_to_favourites">加入收藏</string>
+    <string name="favourites_icon">favourites icon</string>
+    <string name="request_teacher">提交上课请求</string>
     <string name="bio">简介</string>
-    <string name="education">学历</string>
+    <string name="bio_eg">李小胖，琵琶演奏家，专业琵琶教师，立足于对中国传统音乐的理解，演奏的乐曲风格宽泛，
+        音乐变化丰富。有十五年的琵琶教学经验，具有高度的工作热情，能够在多方面培养学生对民乐的兴趣和对音乐艺术的热爱。</string>
+    <string name="edu">学历</string>
+    <string name="edu_eg">1981年毕业于山寨音乐学院民乐系，现山寨音乐学院民乐系副教授。</string>
     <string name="comments">评价</string>
 
     <!-- Sign up Components -->
