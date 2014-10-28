@@ -3,53 +3,77 @@ package com.example.cwl;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
+import android.widget.Button;
 
 public class HomepageActivity extends Activity {
 	public static Context appContext;
-
-	/** Called when the activity is first created. */
+	private Button teacher = null;
+	private Button myFavTeacher = null;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_homepage);
-
+		
+		teacher = (Button) findViewById(R.id.teacher_button_1);
+		myFavTeacher = (Button) findViewById(R.id.fave_button_1);
+		
 		// ActionBar is initiated
 		ActionBar actionBar = getActionBar();
+		
 		// Tell the ActionBar we want to use Tabs
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
-		// initiating 4 tabs and set text to it (to be replaced by icons+text)
-		// for icons use setIcon(R.drawable.image)
-		ActionBar.Tab HomepageTab = actionBar.newTab().setText("首页");
-		ActionBar.Tab ProfileTab = actionBar.newTab().setText("个人主页");
-		ActionBar.Tab NotifTab = actionBar.newTab().setText("消息");
-		ActionBar.Tab SettingsTab = actionBar.newTab().setText("设置");
-
+		
+		// Initiating 4 tabs and set text to it (to be replaced by icons + text) for icons use setIcon(R.drawable.image)
+		ActionBar.Tab homepageTab = actionBar.newTab().setText("首页");
+		ActionBar.Tab profileTab = actionBar.newTab().setText("个人主页");
+		ActionBar.Tab notifTab = actionBar.newTab().setText("消息");
+		ActionBar.Tab settingsTab = actionBar.newTab().setText("设置");
+		
 		// create the 4 fragments to display content
-		Fragment HomepageFragment = new Fragment();
-		Fragment ProfileFragment = new Fragment();
-		Fragment NotifFragment = new Fragment();
-		Fragment SettingsFragment = new Fragment();
-
+		Fragment homepageFragment = new Fragment();
+		Fragment profileFragment = new Fragment();
+		Fragment notifFragment = new Fragment();
+		Fragment settingsFragment = new Fragment();
+		
 		// set the Tab listener. Now we can listen for clicks
-		HomepageTab.setTabListener(new ATabListener(HomepageFragment));
-		ProfileTab.setTabListener(new ATabListener(ProfileFragment));
-		NotifTab.setTabListener(new ATabListener(NotifFragment));
-		SettingsTab.setTabListener(new ATabListener(SettingsFragment));
-
+		homepageTab.setTabListener(new ATabListener(homepageFragment));
+		profileTab.setTabListener(new ATabListener(profileFragment));
+		notifTab.setTabListener(new ATabListener(notifFragment));
+		settingsTab.setTabListener(new ATabListener(settingsFragment));
+		
 		// add the two tabs to the action bar
-		actionBar.addTab(HomepageTab);
-		actionBar.addTab(ProfileTab);
-		actionBar.addTab(NotifTab);
-		actionBar.addTab(SettingsTab);
+		actionBar.addTab(homepageTab);
+		actionBar.addTab(profileTab);
+		actionBar.addTab(notifTab);
+		actionBar.addTab(settingsTab);
+		
+		// Click the button
+		teacher.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(HomepageActivity.this, PresentBio.class);
+				
+				startActivity(intent);
+			}
+		});
+		
+		myFavTeacher.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.setClass(HomepageActivity.this, PresentBio.class);
+				
+				startActivity(intent);
+			}
+		});
 	}
 }
 
@@ -60,12 +84,9 @@ class ATabListener implements ActionBar.TabListener {
 		this.fragment = fragment;
 	}
 
-	// note on FragmentTransaction: provides API for fragment operations
-	// ie. add, remove, replace fragment are each a transaction
-	// each callback the Listener gets, it adds transaction to the FT.
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		ft.replace(R.id.fragment_container, fragment);
+		//ft.replace(R.id.fragment_container, fragment);
 	}
 
 	@Override
@@ -76,179 +97,7 @@ class ATabListener implements ActionBar.TabListener {
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
 		// nothing, but below is a possible text message
-		//		Toast.makeText(HomepageActivity.appContext, "Reselected!",
-        //	    Toast.LENGTH_LONG).show();
+		// Toast.makeText(HomepageActivity.appContext, "Reselected!",
+		// Toast.LENGTH_LONG).show();
 	}
-
 }
-
-// default generated code below. probably useless.
-
-// public class HomepageActivity extends ActionBarActivity implements
-// ActionBar.TabListener {
-//
-// /**
-// * The {@link android.support.v4.view.PagerAdapter} that will provide
-// * fragments for each of the sections. We use a {@link FragmentPagerAdapter}
-// * derivative, which will keep every loaded fragment in memory. If this
-// * becomes too memory intensive, it may be best to switch to a
-// * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-// */
-// SectionsPagerAdapter mSectionsPagerAdapter;
-//
-// /**
-// * The {@link ViewPager} that will host the section contents.
-// */
-// ViewPager mViewPager;
-//
-// @Override
-// protected void onCreate(Bundle savedInstanceState) {
-// super.onCreate(savedInstanceState);
-// setContentView(R.layout.activity_homepage);
-//
-// // Set up the action bar.
-// final ActionBar actionBar = getSupportActionBar();
-// actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-//
-// // Create the adapter that will return a fragment for each of the
-// // primary sections of the activity.
-// mSectionsPagerAdapter = new SectionsPagerAdapter(
-// getSupportFragmentManager());
-//
-// // Set up the ViewPager with the sections adapter.
-// mViewPager = (ViewPager) findViewById(R.id.pager);
-// mViewPager.setAdapter(mSectionsPagerAdapter);
-//
-// // When swiping between different sections, select the corresponding
-// // tab. We can also use ActionBar.Tab#select() to do this if we have
-// // a reference to the Tab.
-// mViewPager
-// .setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
-// @Override
-// public void onPageSelected(int position) {
-// actionBar.setSelectedNavigationItem(position);
-// }
-// });
-//
-// // For each of the sections in the app, add a tab to the action bar.
-// for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
-// // Create a tab with text corresponding to the page title defined by
-// // the adapter. Also specify this Activity object, which implements
-// // the TabListener interface, as the callback (listener) for when
-// // this tab is selected.
-// actionBar.addTab(actionBar.newTab()
-// .setText(mSectionsPagerAdapter.getPageTitle(i))
-// .setTabListener(this));
-// }
-// }
-//
-// @Override
-// public boolean onCreateOptionsMenu(Menu menu) {
-// // Inflate the menu; this adds items to the action bar if it is present.
-// getMenuInflater().inflate(R.menu.homepage, menu);
-// return true;
-// }
-//
-// @Override
-// public boolean onOptionsItemSelected(MenuItem item) {
-// // Handle action bar item clicks here. The action bar will
-// // automatically handle clicks on the Home/Up button, so long
-// // as you specify a parent activity in AndroidManifest.xml.
-// int id = item.getItemId();
-// if (id == R.id.action_settings) {
-// return true;
-// }
-// return super.onOptionsItemSelected(item);
-// }
-//
-// @Override
-// public void onTabSelected(ActionBar.Tab tab,
-// FragmentTransaction fragmentTransaction) {
-// // When the given tab is selected, switch to the corresponding page in
-// // the ViewPager.
-// mViewPager.setCurrentItem(tab.getPosition());
-// }
-//
-// @Override
-// public void onTabUnselected(ActionBar.Tab tab,
-// FragmentTransaction fragmentTransaction) {
-// }
-//
-// @Override
-// public void onTabReselected(ActionBar.Tab tab,
-// FragmentTransaction fragmentTransaction) {
-// }
-//
-// /**
-// * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-// * one of the sections/tabs/pages.
-// */
-// public class SectionsPagerAdapter extends FragmentPagerAdapter {
-//
-// public SectionsPagerAdapter(FragmentManager fm) {
-// super(fm);
-// }
-//
-// @Override
-// public Fragment getItem(int position) {
-// // getItem is called to instantiate the fragment for the given page.
-// // Return a PlaceholderFragment (defined as a static inner class
-// // below).
-// return PlaceholderFragment.newInstance(position + 1);
-// }
-//
-// @Override
-// public int getCount() {
-// // Show 4 total pages.
-// return 4;
-// }
-//
-// @Override
-// public CharSequence getPageTitle(int position) {
-// Locale l = Locale.getDefault();
-// switch (position) {
-// case 0:
-// return getString(R.string.title_section1).toUpperCase(l);
-// case 1:
-// return getString(R.string.title_section2).toUpperCase(l);
-// case 2:
-// return getString(R.string.title_section3).toUpperCase(l);
-// }
-// return null;
-// }
-// }
-//
-// /**
-// * A placeholder fragment containing a simple view.
-// */
-// public static class PlaceholderFragment extends Fragment {
-// /**
-// * The fragment argument representing the section number for this
-// * fragment.
-// */
-// private static final String ARG_SECTION_NUMBER = "section_number";
-//
-// /**
-// * Returns a new instance of this fragment for the given section number.
-// */
-// public static PlaceholderFragment newInstance(int sectionNumber) {
-// PlaceholderFragment fragment = new PlaceholderFragment();
-// Bundle args = new Bundle();
-// args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-// fragment.setArguments(args);
-// return fragment;
-// }
-//
-// public PlaceholderFragment() {
-// }
-//
-// @Override
-// public View onCreateView(LayoutInflater inflater, ViewGroup container,
-// Bundle savedInstanceState) {
-// View rootView = inflater.inflate(R.layout.fragment_homepage,
-// container, false);
-// return rootView;
-// }
-// }
-//
-// }
