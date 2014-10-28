@@ -5,16 +5,12 @@
     <corners android:radius="0dp" />
 
     <gradient
-        android:centerColor="#78bee2"
+        android:startColor="#a1d2eb"
+        android:centerColor="#69b7df"
+        android:endColor="#44A5D8"
         android:centerX="51%"
         android:centerY="52%"
-        android:endColor="#44A5D8"
-        android:gradientRadius="430"
-        android:startColor="#cae3f0"
+        android:gradientRadius="540"
         android:type="radial" />
-
-<!--     <size -->
-<!--         android:height="match_parent" -->
-<!--         android:width="match_parent" /> -->
 
 </shape>

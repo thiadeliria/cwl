@@ -2,13 +2,14 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--App basics -->
-    <string name="app_name">ChangWeiLai</string>
+    <string name="app_name">梦响</string>
     
     <!--Login -->
     <string name="login">登录</string>
     <string name="sign_up">注册</string>
     <string name="sign_up_new_account">注册新账户</string>
-    <string name="username">用户名 / 手机号</string>
+    <string name="username">用户名</string>
+    <string name="username_or_phone">用户名 / 手机号</string>
     <string name="password">密码</string>
     <string name="password_confirm">确认密码</string>
     <string name="remember_me">记住我的密码</string>
@@ -76,8 +77,8 @@
     <string name="phone_verified_eg">您的手机号 (+86)1868 888 0000 已成功绑定！</string>
     <string name="account_verified">认证成功</string>
     <string name="account_verified_eg">恭喜！您的用户已通过认证。</string>
-    <string name="user_eg_2">殷悦</string>
     <string name="user_eg_1">刘畅</string>
+    <string name="user_eg_2">殷悦</string>
     <string name="user_message_eg">好，到时候见。别忘了带谱子！</string>
     <string name="time_last_week">上周</string>
     <string name="time_yesterday">昨天</string>
