@@ -33,6 +33,8 @@
     
     <!--Homepage -->
     <string name="homepage">首页</string>
+    <string name="recommended_teachers">推荐教师</string>
+    <string name="recommended_students">推荐学生</string>
     <string name="my_teachers">我的教师</string>
     <string name="my_students">我的学生</string>
     <string name="my_fave_students">我的收藏学生</string>
@@ -56,6 +58,38 @@
     <string name="edu">学历</string>
     <string name="edu_eg">1981年毕业于山寨音乐学院民乐系，现山寨音乐学院民乐系副教授。</string>
     <string name="comments">评价</string>
+    
+    <!--Notifications -->
+    <string name="incoming_request">您有新的上课请求</string>
+    <string name="incoming_request_eg">刘畅 给您发送了上课请求。</string>
+    <string name="new_comment">您有新的评价</string>
+    <string name="new_comment_eg">刘畅 在您的个人主页上发出新的评价：”老师太帅了“</string>
+    <string name="request_success">请求成功</string>
+    <string name="request_success_eg">您已确认 刘畅 发出的上课请求！请点此进入课程表。</string>
+    <string name="upcoming_lesson">上课提醒</string>
+    <string name="upcoming_lesson_eg">提醒：11月2日上午10:30时 与 刘畅 同学上课；课时 60 分钟。</string>
+    <string name="payment_success">支付成功</string>
+    <string name="payment_success_eg">刘畅 已向您的账户“工商银行”汇入 800.00 RMB,请注意查收。</string>
+    <string name="email_verified">邮箱绑定成功</string>
+    <string name="email_verified_eg">您的邮箱 lxp1968@example.com 已成功绑定！</string>
+    <string name="phone_verified">手机绑定成功</string>
+    <string name="phone_verified_eg">您的手机号 (+86)1868 888 0000 已成功绑定！</string>
+    <string name="account_verified">认证成功</string>
+    <string name="account_verified_eg">恭喜！您的用户已通过认证。</string>
+    <string name="user_eg_2">殷悦</string>
+    <string name="user_eg_1">刘畅</string>
+    <string name="user_message_eg">好，到时候见。别忘了带谱子！</string>
+    <string name="time_last_week">上周</string>
+    <string name="time_yesterday">昨天</string>
+    <string name="time_monday">周一</string>
+    <string name="time_tuesday">周二</string>
+    <string name="time_wednesday">周三</string>
+    <string name="time_thursday">周四</string>
+    <string name="time_friday">周五</string>
+    <string name="time_saturday">周六</string>
+    <string name="time_sunday">周日</string>
+    <string name="time_eg_1">下午 3:12</string>
+    <string name="time_eg_2">上午 11:48</string>
 
     <!-- Sign up Components -->
     <string name="usrEmpty">请输入用户名</string>

@@ -31,5 +31,32 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+    
+    <style name="NotifLabel">
+        <item name="android:textColor">#061015</item>
+        <item name="android:textSize">17.5sp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">17dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="NotifTimestamp">
+        <item name="android:textColor">#44a5d8</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="NotifText">
+        <item name="android:textColor">#9f9f9f</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
 </resources>
