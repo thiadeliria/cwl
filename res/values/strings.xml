@@ -73,5 +73,9 @@
     <string name="nameLenErr">姓名不足2个字</string>
     <string name="phoneLenErr">请输入正确的手机号</string>
     <string name="pwdLenErr">密码不少于6位</string>
+    
+    <!-- Present Profile -->
+    <string name="collectSucess">收藏成功</string>
+    <string name="submitSucess">提交成功</string>
 
 </resources>
