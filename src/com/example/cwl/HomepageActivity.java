@@ -1,5 +1,8 @@
 package com.example.cwl;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
@@ -8,13 +11,17 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class HomepageActivity extends Activity {
 	public static Context appContext;
 	private Button teacher = null;
 	private Button myFavTeacher = null;
+	
+	private boolean isExit = false;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +81,32 @@ public class HomepageActivity extends Activity {
 				startActivity(intent);
 			}
 		});
+	}
+	
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			exitByDoubleClick();
+		}
+		return false;
+	}
+
+	private void exitByDoubleClick() {
+		Timer timer = null;
+		if (isExit == false) {
+			isExit = true; // Prepare to exit
+			Toast.makeText(this, R.string.pressAgain, Toast.LENGTH_LONG).show();
+			timer = new Timer();
+			timer.schedule(new TimerTask() {
+				@Override
+				public void run() {
+					isExit = false;
+				}
+			}, 2000);
+		}
+		else {
+			finish();
+			System.exit(0);
+		}
 	}
 }
 
