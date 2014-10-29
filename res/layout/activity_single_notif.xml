@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--Hard-coded for now. Actual notifications function will be implemented after Prototype. -->
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/notif_1"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:layout_marginBottom="2dp"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:textColor="#f9f9f9"
+            android:textSize="15sp"
+            android:clickable="true" >
+            
+            <TextView
+                android:id="@+id/notif_1_label"
+                style="@style/NotifLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/new_comment" />
+            
+            <TextView
+                android:id="@+id/notif_1_time"
+                style="@style/NotifTimestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/notif_1_label"
+                android:text="@string/time_eg_1" />
+            
+            <TextView
+                android:id="@+id/notif_1_text"
+                style="@style/NotifText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notif_1_label"
+                android:layout_alignLeft="@+id/notif_1_label"
+                android:text="@string/new_comment_eg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
