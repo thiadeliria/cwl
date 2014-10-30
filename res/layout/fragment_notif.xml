@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <!--Hard-coded for now. Actual notifications function will be implemented after Prototype. -->
+    <!-- Hard-coded for now. Actual notifications function will be implemented after Prototype. -->
+
     <LinearLayout
         android:id="@+id/parent_layout"
         android:layout_width="match_parent"
@@ -13,237 +14,249 @@
         android:background="#e0e0e0"
         android:orientation="vertical" >
 
+        <!-- Links to activity_notif_1 -->
+
         <RelativeLayout
             android:id="@+id/notif_1"
             android:layout_width="match_parent"
             android:layout_height="82dp"
             android:layout_marginBottom="2dp"
-            android:padding="5dp"
             android:background="#ffffff"
+            android:clickable="true"
+            android:padding="5dp"
             android:textColor="#f9f9f9"
-            android:textSize="15sp"
-            android:clickable="true" >
-            
+            android:textSize="15sp" >
+
             <TextView
                 android:id="@+id/notif_1_label"
                 style="@style/NotifLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:text="@string/new_comment" />
-            
+
             <TextView
                 android:id="@+id/notif_1_time"
                 style="@style/NotifTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignBottom="@+id/notif_1_label"
+                android:layout_alignParentRight="true"
                 android:text="@string/time_eg_1" />
-            
+
             <TextView
                 android:id="@+id/notif_1_text"
                 style="@style/NotifText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/notif_1_label"
                 android:layout_alignLeft="@+id/notif_1_label"
+                android:layout_below="@+id/notif_1_label"
                 android:text="@string/new_comment_eg" />
         </RelativeLayout>
+
+        <!-- Links to activity_notif_2 -->
 
         <RelativeLayout
             android:id="@+id/notif_2"
             android:layout_width="match_parent"
             android:layout_height="82dp"
             android:layout_marginBottom="2dp"
-            android:padding="5dp"
             android:background="#ffffff"
+            android:clickable="true"
+            android:padding="5dp"
             android:textColor="#f9f9f9"
-            android:textSize="15sp"
-            android:clickable="true" >
-            
+            android:textSize="15sp" >
+
             <TextView
                 android:id="@+id/notif_2_label"
                 style="@style/NotifLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:text="@string/upcoming_lesson" />
-            
+
             <TextView
                 android:id="@+id/notif_2_time"
                 style="@style/NotifTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignBottom="@+id/notif_2_label"
+                android:layout_alignParentRight="true"
                 android:text="@string/time_yesterday" />
-            
+
             <TextView
                 android:id="@+id/notif_2_text"
                 style="@style/NotifText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/notif_2_label"
                 android:layout_alignLeft="@+id/notif_2_label"
+                android:layout_below="@+id/notif_2_label"
                 android:text="@string/upcoming_lesson_eg" />
         </RelativeLayout>
+
+        <!-- Links to activity_notif_3 -->
 
         <RelativeLayout
             android:id="@+id/notif_3"
             android:layout_width="match_parent"
             android:layout_height="82dp"
             android:layout_marginBottom="2dp"
-            android:padding="5dp"
             android:background="#ffffff"
+            android:clickable="true"
+            android:padding="5dp"
             android:textColor="#f9f9f9"
-            android:textSize="15sp"
-            android:clickable="true" >
-            
+            android:textSize="15sp" >
+
             <TextView
                 android:id="@+id/notif_3_label"
                 style="@style/NotifLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:text="@string/phone_verified" />
-            
+
             <TextView
                 android:id="@+id/notif_3_time"
                 style="@style/NotifTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignBottom="@+id/notif_3_label"
+                android:layout_alignParentRight="true"
                 android:text="@string/time_friday" />
-            
+
             <TextView
                 android:id="@+id/notif_3_text"
                 style="@style/NotifText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/notif_3_label"
                 android:layout_alignLeft="@+id/notif_3_label"
+                android:layout_below="@+id/notif_3_label"
                 android:text="@string/phone_verified_eg" />
         </RelativeLayout>
+
+        <!-- Links to activity_notif_4 -->
 
         <RelativeLayout
             android:id="@+id/notif_4"
             android:layout_width="match_parent"
             android:layout_height="82dp"
             android:layout_marginBottom="2dp"
-            android:padding="5dp"
             android:background="#ffffff"
+            android:clickable="true"
+            android:padding="5dp"
             android:textColor="#f9f9f9"
-            android:textSize="15sp"
-            android:clickable="true" >
-            
+            android:textSize="15sp" >
+
             <TextView
                 android:id="@+id/notif_4_label"
                 style="@style/NotifLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:text="@string/user_eg_1" />
-            
+                android:layout_alignParentTop="true"
+                android:text="@string/incoming_request" />
+
             <TextView
                 android:id="@+id/notif_4_time"
                 style="@style/NotifTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignBottom="@+id/notif_4_label"
+                android:layout_alignParentRight="true"
                 android:text="@string/time_friday" />
-            
+
             <TextView
                 android:id="@+id/notif_4_text"
                 style="@style/NotifText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/notif_4_label"
                 android:layout_alignLeft="@+id/notif_4_label"
-                android:text="@string/user_message_eg" />
+                android:layout_below="@+id/notif_4_label"
+                android:text="@string/incoming_request_eg" />
         </RelativeLayout>
+
+        <!-- Links to activity_notif_5 -->
 
         <RelativeLayout
             android:id="@+id/notif_5"
             android:layout_width="match_parent"
             android:layout_height="82dp"
             android:layout_marginBottom="2dp"
-            android:padding="5dp"
             android:background="#ffffff"
+            android:clickable="true"
+            android:padding="5dp"
             android:textColor="#f9f9f9"
-            android:textSize="15sp"
-            android:clickable="true" >
-            
+            android:textSize="15sp" >
+
             <TextView
                 android:id="@+id/notif_5_label"
                 style="@style/NotifLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:text="@string/request_success" />
-            
+
             <TextView
                 android:id="@+id/notif_5_time"
                 style="@style/NotifTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignBottom="@+id/notif_5_label"
+                android:layout_alignParentRight="true"
                 android:text="@string/time_thursday" />
-            
+
             <TextView
                 android:id="@+id/notif_5_text"
                 style="@style/NotifText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/notif_5_label"
                 android:layout_alignLeft="@+id/notif_5_label"
+                android:layout_below="@+id/notif_5_label"
                 android:text="@string/request_success_eg" />
         </RelativeLayout>
+
+        <!-- Links to activity_notif_6 -->
 
         <RelativeLayout
             android:id="@+id/notif_6"
             android:layout_width="match_parent"
             android:layout_height="82dp"
             android:layout_marginBottom="2dp"
-            android:padding="5dp"
             android:background="#ffffff"
+            android:clickable="true"
+            android:padding="5dp"
             android:textColor="#f9f9f9"
-            android:textSize="15sp"
-            android:clickable="true" >
-            
+            android:textSize="15sp" >
+
             <TextView
                 android:id="@+id/notif_6_label"
                 style="@style/NotifLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
                 android:text="@string/account_verified" />
-            
+
             <TextView
                 android:id="@+id/notif_6_time"
                 style="@style/NotifTimestamp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignBottom="@+id/notif_6_label"
+                android:layout_alignParentRight="true"
                 android:text="@string/time_last_week" />
-            
+
             <TextView
                 android:id="@+id/notif_6_text"
                 style="@style/NotifText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/notif_6_label"
                 android:layout_alignLeft="@+id/notif_6_label"
+                android:layout_below="@+id/notif_6_label"
                 android:text="@string/account_verified_eg" />
         </RelativeLayout>
     </LinearLayout>

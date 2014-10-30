@@ -62,7 +62,7 @@
     
     <!--Notifications -->
     <string name="incoming_request">您有新的上课请求</string>
-    <string name="incoming_request_eg">刘畅 给您发送了上课请求。</string>
+    <string name="incoming_request_eg">殷悦 给您发送了上课请求。</string>
     <string name="new_comment">您有新的评价</string>
     <string name="new_comment_eg">刘畅 在您的个人主页上发出新的评价：”老师太帅了“</string>
     <string name="request_success">请求成功</string>
@@ -91,6 +91,7 @@
     <string name="time_sunday">周日</string>
     <string name="time_eg_1">下午 3:12</string>
     <string name="time_eg_2">上午 11:48</string>
+    <string name="see_details">查看详情  ></string>
 
     <!-- Sign up Components -->
     <string name="usrEmpty">请输入用户名</string>

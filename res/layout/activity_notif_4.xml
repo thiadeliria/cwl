@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Hard-coded for now. Actual notifications function will be implemented after Prototype. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/notif_4_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:text="@string/time_friday"
+        android:textColor="#44a5d8" />
+
+    <RelativeLayout
+        android:id="@+id/notif_bubble"
+        android:layout_width="281dp"
+        android:layout_height="89dp"
+        android:layout_below="@+id/notif_4_time"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/msg_bubble_body"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/notif_4_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/incoming_request"
+            android:textColor="#061015"
+            android:textSize="17.5sp" />
+
+        <TextView
+            android:id="@+id/notif_4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/notif_4_label"
+            android:layout_below="@+id/notif_4_label"
+            android:text="@string/incoming_request_eg"
+            android:textColor="#9f9f9f"
+            android:textSize="15sp" />
+
+        <!-- links to profile 2 -->
+
+        <TextView
+            android:id="@+id/notif_4_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="right"
+            android:text="@string/see_details"
+            android:textColor="#d0d0d0"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
