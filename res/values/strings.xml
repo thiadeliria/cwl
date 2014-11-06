@@ -112,6 +112,10 @@
     
     <!-- Main Activity -->
     <string name="pressAgain">再按一次退出程序</string>
+    <string name="homePage">首页</string>
+    <string name="personalPage">个人主页</string>
+    <string name="msgs">消息</string>
+    <string name="settins">设置</string>
     
     <!-- Present Profile -->
     <string name="collectSucess">收藏成功</string>
