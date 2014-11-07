@@ -200,7 +200,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/address_prompt"
-                android:background="@drawable/login_button"
+                android:background="@drawable/button_login"
                 android:text="@string/sign_up"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"

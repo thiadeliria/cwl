@@ -43,12 +43,14 @@
     <string name="my_schedule">我的课程计划</string>
     <string name="calendar_icon">calendar icon</string>
     <string name="teacher_icon">teacher icon</string>
-    <string name="fave_teacher_icon">favourite icon</string>
+    <string name="student_icon">student icon</string>
+    <string name="fave_teacher_icon">favourite teacher icon</string>
+    <string name="fave_student_icon">favourite student icon</string>
     
     <!--Profile -->
     <string name="profile_pic">Profile picture</string>
     <string name="username_eg">李小胖</string>
-    <string name="address_eg">河北省石家庄市</string>
+    <string name="address_eg">北京市</string>
     <string name="interests_eg">琵琶</string>
     <string name="add_to_favourites">加入收藏</string>
     <string name="favourites_icon">favourites icon</string>

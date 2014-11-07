@@ -27,13 +27,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignUp"
-            android:label="@string/sign_up_new_account" >
+            android:name="MainActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".HomepageActivity"
-            android:label="@string/homepage" 
-            android:uiOptions="splitActionBarWhenNarrow" >
+            android:name="SignUp"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="PresentBio"
+            android:label="@string/app_name" >
         </activity>
     </application>
 

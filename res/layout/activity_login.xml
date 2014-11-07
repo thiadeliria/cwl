@@ -62,10 +62,11 @@
         android:layout_alignLeft="@+id/password_input"
         android:layout_below="@+id/remember_me"
         android:layout_marginBottom="41dp"
-        android:background="@drawable/login_button"
+        android:background="@drawable/button_login"
         android:text="@string/login"
         android:textColor="#FFFFFF"
-        android:textSize="18sp" />
+        android:textSize="19sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/sign_up"

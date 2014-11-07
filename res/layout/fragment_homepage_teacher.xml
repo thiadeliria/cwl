@@ -1,0 +1,297 @@
+<!-- This is the first page that the user sees in Teacher Mode. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/grand_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="14dp" >
+
+        <!-- tools:context="com.example.cwl.HomepageActivity$PlaceholderFragment" -->
+
+        <RelativeLayout
+            android:id="@+id/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Button will link to full page of 课程计划 with calendar. -->
+
+            <Button
+                android:id="@+id/my_schedule"
+                style="@style/PanelText"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/my_schedule" />
+
+            <ImageView
+                android:id="@+id/calendar_icon"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="8dp"
+                android:contentDescription="@string/calendar_icon"
+                android:paddingTop="5dp"
+                android:src="@drawable/icon_calendar_dark" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <CalendarView
+                    android:id="@+id/calendarView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:firstDayOfWeek="2"
+                    android:shownWeekCount="2" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/button_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <!-- Will link to full page of 我的收藏, each user listed. -->
+
+            <Button
+                android:id="@+id/recommended_students"
+                style="@style/PanelText"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/recommended_students" />
+
+            <ImageView
+                android:id="@+id/recommended_students_icon"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/fave_student_icon"
+                android:src="@drawable/icon_student_dark" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal" >
+
+                <!-- Each button links to profile pg of selected user -->
+
+                <ImageButton
+                    android:id="@+id/rec_button_1"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_01"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/rec_button_2"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_02"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/rec_button_3"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_03"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/rec_button_4"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_04"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/rec_button_5"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_05"
+                    android:contentDescription="@string/student_icon" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/button_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <!-- Will link to full page of 我的学生, each user listed. -->
+
+            <Button
+                android:id="@+id/my_students"
+                style="@style/PanelText"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/my_students" />
+
+            <ImageView
+                android:id="@+id/student_icon"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:contentDescription="@string/student_icon"
+                android:src="@drawable/icon_student_dark" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal" >
+
+                <!-- Will link to full page of 我的收藏学生, each user listed. -->
+
+                <ImageButton
+                    android:id="@+id/student_button_1"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_09"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/student_button_2"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_12"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/student_button_3"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_07"
+                    android:contentDescription="@string/student_icon" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@+id/button_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <!-- Will link to full page of 我的收藏, each user listed. -->
+
+            <Button
+                android:id="@+id/my_fave_students"
+                style="@style/PanelText"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:background="@drawable/panel_button"
+                android:gravity="left"
+                android:paddingLeft="49dp"
+                android:paddingTop="7dp"
+                android:text="@string/my_fave_students" />
+
+            <ImageView
+                android:id="@+id/fave_student_icon"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/fave_student_icon"
+                android:src="@drawable/icon_favourite_dark" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="horizontal" >
+
+                <!-- Each button links to profile pg of selected user -->
+
+                <ImageButton
+                    android:id="@+id/fave_button_1"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_06"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/fave_button_2"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_18"
+                    android:contentDescription="@string/student_icon" />
+
+                <ImageButton
+                    android:id="@+id/fave_button_3"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/s_13"
+                    android:contentDescription="@string/student_icon" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</ScrollView>
