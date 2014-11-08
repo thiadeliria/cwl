@@ -26,7 +26,7 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:contentDescription="@string/profile_pic"
-                android:src="@drawable/t_01" />
+                android:src="@drawable/t_17" />
 
             <TextView
                 android:id="@+id/username"
@@ -35,7 +35,7 @@
                 android:layout_marginLeft="21dp"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@+id/profile_pic"
-                android:text="@string/username_eg"
+                android:text="李中辉"
                 android:textColor="#0d212b"
                 android:textSize="21sp" />
 
@@ -57,7 +57,7 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="@string/interests_eg"
+                android:text="大提琴，小提琴"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -88,7 +88,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/favourites_icon"
-                android:src="@drawable/icon_add_contact" />
+                android:src="@drawable/ic_add_contact" />
 
             <View
                 android:id="@+id/filler_view"
@@ -117,7 +117,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/teacher_icon"
-                android:src="@drawable/icon_teacher" />
+                android:src="@drawable/ic_teacher" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -141,7 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="@string/bio_eg"
+                android:text="著名作曲家、大提琴家，国家一级演奏员。6岁开始学小提琴，8岁开始学大提琴，从师沈立巍教授，21岁考入瓦赛尔音乐学院。其演奏风格演奏作风极其优美，色彩丰富，变化无穷，格调高雅。
+
+至今从事大提琴、小提琴教学二十余年，培养的学员多数已通过音乐学院水平九级考试，积累了丰富的教学经验。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -167,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edu_title"
-                android:text="@string/edu_eg"
+                android:text="1985年毕业于瓦赛尔音乐学院，现任瓦赛尔音乐学院教授，中国音乐家协会弦乐学会成员。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>

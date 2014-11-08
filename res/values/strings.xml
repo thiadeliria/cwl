@@ -61,6 +61,7 @@
     <string name="edu">学历</string>
     <string name="edu_eg">1981年毕业于山寨音乐学院民乐系，现山寨音乐学院民乐系副教授。</string>
     <string name="comments">评价</string>
+    <string name="edit_icon">edit icon</string>
     
     <!--Notifications -->
     <string name="incoming_request">您有新的上课请求</string>

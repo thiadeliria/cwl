@@ -102,7 +102,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		// create the 4 fragments to display content
 		homepageFragment = new HomepageFragment();
 		profileFragment = new ProfileFragment();
-		notifFragment = new NotifyFragment();
+		notifFragment = new NotifFragment();
 		settingsFragment = new SettingsFragment();
 
 		frags.add(homepageFragment);

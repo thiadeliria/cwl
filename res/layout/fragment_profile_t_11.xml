@@ -1,4 +1,5 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +26,7 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:contentDescription="@string/profile_pic"
-                android:src="@drawable/t_04" />
+                android:src="@drawable/t_11" />
 
             <TextView
                 android:id="@+id/username"
@@ -34,7 +35,7 @@
                 android:layout_marginLeft="21dp"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@+id/profile_pic"
-                android:text="龙婉容"
+                android:text="聂欣"
                 android:textColor="#0d212b"
                 android:textSize="21sp" />
 
@@ -56,7 +57,7 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="钢琴、乐理"
+                android:text="小提琴，乐理"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -140,7 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="自幼学习钢琴，具有出色的专业水准和艺术修养。从事钢琴、乐理教学十年，因材施教，逐渐形成了自身的一套教学机制。在多年的教育事业里，所培养的学生在各比赛和考级活动中取得了优异的成绩。"
+                android:text="知名小提琴演奏家，国家二级演奏员，从事小提琴教学11年，在教学过程中融和古典音乐和现代音乐元素，让学生在学习演奏传统优秀作品的同时，又发挥了自我的创造能力，突破过去传统教学对学生的束缚感。
+
+其学生过级率达97%，并有多名学生参加全国高等学府艺术考试并取得一级证书。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -166,11 +169,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edu_title"
-                android:text="1999年毕业于丝绸艺术学院钢琴系。"
+                android:text="2003年毕业于天马音乐学院，中国音乐家协会弦乐学会成员。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
-
+        
         <RelativeLayout
             android:id="@+id/comments_panel"
             android:layout_width="match_parent"
@@ -186,6 +189,7 @@
                 android:text="@string/comments"
                 android:textColor="#0d212b"
                 android:textSize="18sp" />
+            
         </RelativeLayout>
     </LinearLayout>
 

@@ -57,7 +57,7 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="架子鼓"
+                android:text="架子鼓，声乐"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -88,7 +88,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/favourites_icon"
-                android:src="@drawable/icon_add_contact" />
+                android:src="@drawable/ic_add_contact" />
 
             <View
                 android:id="@+id/filler_view"
@@ -117,7 +117,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/teacher_icon"
-                android:src="@drawable/icon_teacher" />
+                android:src="@drawable/ic_teacher" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -141,7 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="张越，架子鼓演奏家，专业架子鼓教师，1988年成立哈哈镜乐团。有十年的架子鼓教学经验，具有高度的工作热情，能够在多方面培养学生对摇滚的兴趣和对音乐艺术的热爱。"
+                android:text="歌手，架子鼓演奏家，专业架子鼓、声乐教师，1999 年成立哈哈镜乐团，曾多次以鼓手及主唱角色随乐团参加国内外大型演出。
+
+轻松愉快的上课氛围，科学合理的练习计划，正确的引导学员活跃的思维方式，最大限度的开发学员的潜能，帮助他们在有限的时间内得到进步。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -167,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edu_title"
-                android:text="1996年毕业于山寨音乐学院音乐系。"
+                android:text="1996年毕业于山北音乐学院音乐系,中国音乐家协会打击乐学会会员。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>

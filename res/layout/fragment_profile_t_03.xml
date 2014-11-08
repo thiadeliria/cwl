@@ -57,7 +57,7 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="手风琴"
+                android:text="钢琴，乐理"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -88,7 +88,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/favourites_icon"
-                android:src="@drawable/icon_add_contact" />
+                android:src="@drawable/ic_add_contact" />
 
             <View
                 android:id="@+id/filler_view"
@@ -117,7 +117,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/teacher_icon"
-                android:src="@drawable/icon_teacher" />
+                android:src="@drawable/ic_teacher" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -141,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="马海燕，手风琴演奏家，专业手风琴教师，1994年获国家级优秀教学成果奖，1996获中国音协手风琴学会颁发的优秀中国作品奖。"
+                android:text="马海燕，钢琴演奏家，专业钢琴、乐理教师，1994年获国家级优秀教学成果奖，1996获中国音协钢琴学会颁发的优秀中国作品奖。其多名学生凭钢琴专业以及优秀成绩保送借读于丘吉尔音乐学院、京城音乐学院、山北艺术学院等高等学院。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -167,7 +167,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edu_title"
-                android:text="1988年毕业于山寨音乐学院音乐系，现山寨音乐学院民乐系教授。"
+                android:text="1988年毕业于京城音乐学院钢琴系，现京城音乐学院钢琴系教授，中国音协钢琴学会成员，华北青年乐团成员。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>

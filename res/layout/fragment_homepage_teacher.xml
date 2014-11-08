@@ -40,7 +40,7 @@
                 android:layout_marginLeft="8dp"
                 android:contentDescription="@string/calendar_icon"
                 android:paddingTop="5dp"
-                android:src="@drawable/icon_calendar_dark" />
+                android:src="@drawable/ic_calendar_dark" />
         </RelativeLayout>
 
         <HorizontalScrollView
@@ -91,7 +91,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
                 android:contentDescription="@string/fave_student_icon"
-                android:src="@drawable/icon_student_dark" />
+                android:src="@drawable/ic_student_dark" />
         </RelativeLayout>
 
         <HorizontalScrollView
@@ -178,7 +178,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="4dp"
                 android:contentDescription="@string/student_icon"
-                android:src="@drawable/icon_student_dark" />
+                android:src="@drawable/ic_student_dark" />
         </RelativeLayout>
 
         <HorizontalScrollView
@@ -249,7 +249,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="5dp"
                 android:contentDescription="@string/fave_student_icon"
-                android:src="@drawable/icon_favourite_dark" />
+                android:src="@drawable/ic_favourite_dark" />
         </RelativeLayout>
 
         <HorizontalScrollView

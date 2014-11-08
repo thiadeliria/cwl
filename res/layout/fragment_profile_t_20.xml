@@ -1,4 +1,5 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +26,7 @@
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:contentDescription="@string/profile_pic"
-                android:src="@drawable/t_04" />
+                android:src="@drawable/t_20" />
 
             <TextView
                 android:id="@+id/username"
@@ -34,7 +35,7 @@
                 android:layout_marginLeft="21dp"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@+id/profile_pic"
-                android:text="龙婉容"
+                android:text="郭莉莉"
                 android:textColor="#0d212b"
                 android:textSize="21sp" />
 
@@ -56,7 +57,7 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="钢琴、乐理"
+                android:text="声乐"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -140,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="自幼学习钢琴，具有出色的专业水准和艺术修养。从事钢琴、乐理教学十年，因材施教，逐渐形成了自身的一套教学机制。在多年的教育事业里，所培养的学生在各比赛和考级活动中取得了优异的成绩。"
+                android:text="国家三级歌唱家，著名女高音。郭莉莉出于音乐世家，是著名钢琴演奏家刘冬梅之女，并自小随母学习钢琴、声乐及乐理理论。性格开朗，善于与孩子相处，能够启发孩子的音乐兴趣，打好扎实的基础。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -166,11 +167,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edu_title"
-                android:text="1999年毕业于丝绸艺术学院钢琴系。"
+                android:text="1981年毕业于东北艺术学院音乐系，东北艺术学院客座教授，东北战友歌舞团一级演员。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
-
+        
         <RelativeLayout
             android:id="@+id/comments_panel"
             android:layout_width="match_parent"
@@ -186,6 +187,7 @@
                 android:text="@string/comments"
                 android:textColor="#0d212b"
                 android:textSize="18sp" />
+            
         </RelativeLayout>
     </LinearLayout>
 

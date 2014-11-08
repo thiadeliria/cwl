@@ -11,7 +11,7 @@ public class ProfileFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		content = inflater.inflate(R.layout.fragment_profile, null);
+		content = inflater.inflate(R.layout.fragment_profile_template, null);
 		initView();
 
 		return content;
