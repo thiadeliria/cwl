@@ -46,6 +46,7 @@
     <string name="student_icon">student icon</string>
     <string name="fave_teacher_icon">favourite teacher icon</string>
     <string name="fave_student_icon">favourite student icon</string>
+    <string name="search">search</string>
     
     <!--Profile -->
     <string name="profile_pic">Profile picture</string>
@@ -118,7 +119,7 @@
     <string name="homePage">首页</string>
     <string name="personalPage">个人主页</string>
     <string name="msgs">消息</string>
-    <string name="settins">设置</string>
+    <string name="settings">设置</string>
     
     <!-- Present Profile -->
     <string name="collectSucess">收藏成功</string>

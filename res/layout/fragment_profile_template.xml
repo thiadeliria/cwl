@@ -19,18 +19,22 @@
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
-
-            <ImageView
-                android:id="@+id/profile_pic"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:contentDescription="@string/profile_pic"
-                android:src="@drawable/ic_teacher_dark" />
             
             <ImageButton 
                 android:id="@+id/edit_button"
                 android:contentDescription="@string/edit_icon"
-                android:src="@drawable/ic_edit_dark"/>
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_edit_dark"/>
+
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:contentDescription="@string/profile_pic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_teacher_dark" />
 
             <TextView
                 android:id="@+id/username"

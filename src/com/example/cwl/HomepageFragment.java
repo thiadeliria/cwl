@@ -7,12 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class HomepageFragment extends Fragment {
 	View content;
 	
-	private Button teacher = null;
-	private Button myFavTeacher = null;
+	private Button mySchedule = null;
+	private Button recTeachers = null;
+	private Button myTeachers = null;
+	private Button myFavTeachers = null;
+	
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,11 +32,13 @@ public class HomepageFragment extends Fragment {
 	}
 	
 	private void initView() {
-		teacher = (Button) content.findViewById(R.id.teacher_button_1);
-		myFavTeacher = (Button) content.findViewById(R.id.fave_button_1);
+		mySchedule = (Button) content.findViewById(R.id.my_schedule);
+		recTeachers = (Button) content.findViewById(R.id.recommended_teachers);
+		myTeachers = (Button) content.findViewById(R.id.my_teachers);
+		myFavTeachers = (Button) content.findViewById(R.id.fave_teachers);
 		
 		// Click the button
-		teacher.setOnClickListener(new Button.OnClickListener() {
+		myTeachers.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();
@@ -42,7 +48,7 @@ public class HomepageFragment extends Fragment {
 			}
 		});
 
-		myFavTeacher.setOnClickListener(new Button.OnClickListener() {
+		myFavTeachers.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent();

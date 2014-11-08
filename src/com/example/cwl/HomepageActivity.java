@@ -38,10 +38,14 @@ public class HomepageActivity extends Activity {
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 		
 		// Initiating 4 tabs and set text to it (to be replaced by icons + text) for icons use setIcon(R.drawable.image)
-		ActionBar.Tab homepageTab = actionBar.newTab().setText("首页");
-		ActionBar.Tab profileTab = actionBar.newTab().setText("个人主页");
-		ActionBar.Tab notifTab = actionBar.newTab().setText("消息");
-		ActionBar.Tab settingsTab = actionBar.newTab().setText("设置");
+		/*ActionBar.Tab homepageTab = actionBar.newTab().setText(R.string.homepage);
+		ActionBar.Tab profileTab = actionBar.newTab().setText(R.string.profile);
+		ActionBar.Tab notifTab = actionBar.newTab().setText(R.string.notif);
+		ActionBar.Tab settingsTab = actionBar.newTab().setText(R.string.settings);*/
+		ActionBar.Tab homepageTab = actionBar.newTab().setIcon(R.drawable.ic_home);
+		ActionBar.Tab profileTab = actionBar.newTab().setIcon(R.drawable.ic_profile);
+		ActionBar.Tab notifTab = actionBar.newTab().setIcon(R.drawable.ic_notif);
+		ActionBar.Tab settingsTab = actionBar.newTab().setIcon(R.drawable.ic_settings);
 		
 		// create the 4 fragments to display content
 		Fragment homepageFragment = new Fragment();

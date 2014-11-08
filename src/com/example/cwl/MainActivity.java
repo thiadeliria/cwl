@@ -44,10 +44,14 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
 		// actionBar.addTab(actionBar.newTab().setText("Ê×Ò³").setTabListener(this));
-		ActionBar.Tab homepageTab = actionBar.newTab().setText(R.string.homePage);
-		ActionBar.Tab profileTab = actionBar.newTab().setText(R.string.personalPage);
-		ActionBar.Tab notifTab = actionBar.newTab().setText(R.string.msgs);
-		ActionBar.Tab settingsTab = actionBar.newTab().setText(R.string.settins);
+//		ActionBar.Tab homepageTab = actionBar.newTab().setText(R.string.homePage);
+//		ActionBar.Tab profileTab = actionBar.newTab().setText(R.string.personalPage);
+//		ActionBar.Tab notifTab = actionBar.newTab().setText(R.string.msgs);
+//		ActionBar.Tab settingsTab = actionBar.newTab().setText(R.string.settings);
+		ActionBar.Tab homepageTab = actionBar.newTab().setIcon(R.drawable.ic_home);
+		ActionBar.Tab profileTab = actionBar.newTab().setIcon(R.drawable.ic_profile);
+		ActionBar.Tab notifTab = actionBar.newTab().setIcon(R.drawable.ic_notif);
+		ActionBar.Tab settingsTab = actionBar.newTab().setIcon(R.drawable.ic_settings);
 
 		// set the Tab listener. Now we can listen for clicks
 		homepageTab.setTabListener(this);
@@ -55,7 +59,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		notifTab.setTabListener(this);
 		settingsTab.setTabListener(this);
 
-		// add the two tabs to the action bar
+		// add the tabs to the action bar
 		actionBar.addTab(homepageTab);
 		actionBar.addTab(profileTab);
 		actionBar.addTab(notifTab);
