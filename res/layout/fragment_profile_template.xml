@@ -23,8 +23,8 @@
             <ImageButton 
                 android:id="@+id/edit_button"
                 android:contentDescription="@string/edit_icon"
-                android:layout_width="9dp"
-                android:layout_height="9dp"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:background="@drawable/ic_edit_dark"/>

@@ -30,8 +30,8 @@ public class SignUp extends ActionBarActivity {
 		phone = (EditText) findViewById(R.id.phone_input);
 		pwd = (EditText) findViewById(R.id.password_input);
 		conPwd = (EditText) findViewById(R.id.confirm_password_input);
-		bd = (EditText) findViewById(R.id.birthdate_input);
-		addr = (EditText) findViewById(R.id.address_input);
+//		bd = (EditText) findViewById(R.id.birthdate_input);
+//		addr = (EditText) findViewById(R.id.address_input);
 
 		submit = (Button) findViewById(R.id.signin_button);
 

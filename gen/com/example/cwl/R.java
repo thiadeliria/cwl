@@ -115,87 +115,83 @@ public final class R {
         public static final int t_20=0x7f020059;
     }
     public static final class id {
-        public static final int action_search=0x7f090072;
-        public static final int action_settings=0x7f090071;
-        public static final int add_to_favourites=0x7f090063;
-        public static final int address=0x7f090060;
-        public static final int address_input=0x7f090031;
-        public static final int address_prompt=0x7f090030;
-        public static final int bio_panel=0x7f090067;
-        public static final int bio_text=0x7f090069;
-        public static final int bio_title=0x7f090068;
-        public static final int birthdate_input=0x7f09002f;
-        public static final int birthdate_prompt=0x7f09002e;
+        public static final int action_search=0x7f09006f;
+        public static final int action_settings=0x7f09006e;
+        public static final int add_to_favourites=0x7f090060;
+        public static final int address=0x7f09005d;
+        public static final int bio_panel=0x7f090064;
+        public static final int bio_text=0x7f090066;
+        public static final int bio_title=0x7f090065;
         public static final int browse=0x7f090007;
-        public static final int button_1=0x7f090034;
-        public static final int button_2=0x7f090039;
-        public static final int button_3=0x7f090042;
-        public static final int button_4=0x7f090047;
-        public static final int buttons_panel=0x7f090062;
-        public static final int calendarView1=0x7f090038;
-        public static final int calendar_icon=0x7f090036;
-        public static final int comments_panel=0x7f09006d;
-        public static final int comments_title=0x7f09006e;
-        public static final int confirm_password_input=0x7f09002d;
-        public static final int confirm_password_prompt=0x7f09002c;
-        public static final int edit_button=0x7f09006f;
-        public static final int edu_panel=0x7f09006a;
-        public static final int edu_text=0x7f09006c;
-        public static final int edu_title=0x7f09006b;
-        public static final int email_input=0x7f090028;
-        public static final int email_prompt=0x7f090027;
-        public static final int fave_button_1=0x7f09004b;
-        public static final int fave_button_2=0x7f09004c;
-        public static final int fave_button_3=0x7f09004d;
-        public static final int fave_student_icon=0x7f090056;
-        public static final int fave_teacher_icon=0x7f090049;
-        public static final int fave_teachers=0x7f090048;
-        public static final int favourites_icon=0x7f090065;
-        public static final int filler_view=0x7f090064;
+        public static final int button_1=0x7f090031;
+        public static final int button_2=0x7f090036;
+        public static final int button_3=0x7f09003f;
+        public static final int button_4=0x7f090044;
+        public static final int buttons_panel=0x7f09005f;
+        public static final int calendarView1=0x7f090035;
+        public static final int calendar_icon=0x7f090033;
+        public static final int comments_panel=0x7f09006a;
+        public static final int comments_title=0x7f09006b;
+        public static final int confirm_password_input=0x7f09002e;
+        public static final int confirm_password_prompt=0x7f09002d;
+        public static final int edit_button=0x7f09006c;
+        public static final int edu_panel=0x7f090067;
+        public static final int edu_text=0x7f090069;
+        public static final int edu_title=0x7f090068;
+        public static final int email_input=0x7f090029;
+        public static final int email_prompt=0x7f090028;
+        public static final int fave_button_1=0x7f090048;
+        public static final int fave_button_2=0x7f090049;
+        public static final int fave_button_3=0x7f09004a;
+        public static final int fave_student_icon=0x7f090053;
+        public static final int fave_teacher_icon=0x7f090046;
+        public static final int fave_teachers=0x7f090045;
+        public static final int favourites_icon=0x7f090062;
+        public static final int filler_view=0x7f090061;
         public static final int fragment_container=0x7f090000;
-        public static final int gender_prompt=0x7f090025;
-        public static final int gender_spinner=0x7f090026;
-        public static final int grand_parent_layout=0x7f090033;
+        public static final int gender_prompt=0x7f090026;
+        public static final int gender_spinner=0x7f090027;
+        public static final int grand_parent_layout=0x7f090030;
         public static final int head_image=0x7f090022;
-        public static final int horizontalScrollView1=0x7f090037;
-        public static final int horizontalScrollView2=0x7f09003c;
-        public static final int horizontalScrollView3=0x7f090045;
-        public static final int horizontalScrollView4=0x7f09004a;
-        public static final int interests=0x7f090061;
+        public static final int horizontalScrollView1=0x7f090034;
+        public static final int horizontalScrollView2=0x7f090039;
+        public static final int horizontalScrollView3=0x7f090042;
+        public static final int horizontalScrollView4=0x7f090047;
+        public static final int interests=0x7f09005e;
         public static final int login_button=0x7f090005;
         public static final int mock_logo=0x7f090001;
-        public static final int my_fave_students=0x7f090055;
-        public static final int my_schedule=0x7f090035;
-        public static final int my_students=0x7f090050;
-        public static final int my_teachers=0x7f090043;
-        public static final int name_input=0x7f090024;
-        public static final int name_prompt=0x7f090023;
-        public static final int notif_1=0x7f090057;
+        public static final int my_fave_students=0x7f090052;
+        public static final int my_schedule=0x7f090032;
+        public static final int my_students=0x7f09004d;
+        public static final int my_teachers=0x7f090040;
+        public static final int name_input=0x7f090025;
+        public static final int name_prompt=0x7f090024;
+        public static final int notif_1=0x7f090054;
         public static final int notif_1_details=0x7f09000d;
         public static final int notif_1_label=0x7f09000b;
         public static final int notif_1_text=0x7f09000c;
         public static final int notif_1_time=0x7f090009;
-        public static final int notif_2=0x7f090058;
+        public static final int notif_2=0x7f090055;
         public static final int notif_2_details=0x7f090011;
         public static final int notif_2_label=0x7f09000f;
         public static final int notif_2_text=0x7f090010;
         public static final int notif_2_time=0x7f09000e;
-        public static final int notif_3=0x7f090059;
+        public static final int notif_3=0x7f090056;
         public static final int notif_3_details=0x7f090015;
         public static final int notif_3_label=0x7f090013;
         public static final int notif_3_text=0x7f090014;
         public static final int notif_3_time=0x7f090012;
-        public static final int notif_4=0x7f09005a;
+        public static final int notif_4=0x7f090057;
         public static final int notif_4_details=0x7f090019;
         public static final int notif_4_label=0x7f090017;
         public static final int notif_4_text=0x7f090018;
         public static final int notif_4_time=0x7f090016;
-        public static final int notif_5=0x7f09005b;
+        public static final int notif_5=0x7f090058;
         public static final int notif_5_details=0x7f09001d;
         public static final int notif_5_label=0x7f09001b;
         public static final int notif_5_text=0x7f09001c;
         public static final int notif_5_time=0x7f09001a;
-        public static final int notif_6=0x7f09005c;
+        public static final int notif_6=0x7f090059;
         public static final int notif_6_details=0x7f090021;
         public static final int notif_6_label=0x7f09001f;
         public static final int notif_6_text=0x7f090020;
@@ -203,33 +199,34 @@ public final class R {
         public static final int notif_bubble=0x7f09000a;
         public static final int parent_layout=0x7f090008;
         public static final int password_input=0x7f090003;
-        public static final int password_prompt=0x7f09002b;
-        public static final int phone_input=0x7f09002a;
-        public static final int phone_prompt=0x7f090029;
-        public static final int profile_pic=0x7f09005e;
-        public static final int rec_button_1=0x7f09003d;
-        public static final int rec_button_2=0x7f09003e;
-        public static final int rec_button_3=0x7f09003f;
-        public static final int rec_button_4=0x7f090040;
-        public static final int rec_button_5=0x7f090041;
-        public static final int recommended_students=0x7f09004e;
-        public static final int recommended_students_icon=0x7f09004f;
-        public static final int recommended_teachers=0x7f09003a;
-        public static final int recommended_teachers_icon=0x7f09003b;
+        public static final int password_prompt=0x7f09002c;
+        public static final int phone_input=0x7f09002b;
+        public static final int phone_prompt=0x7f09002a;
+        public static final int profile_pic=0x7f09005b;
+        public static final int rec_button_1=0x7f09003a;
+        public static final int rec_button_2=0x7f09003b;
+        public static final int rec_button_3=0x7f09003c;
+        public static final int rec_button_4=0x7f09003d;
+        public static final int rec_button_5=0x7f09003e;
+        public static final int recommended_students=0x7f09004b;
+        public static final int recommended_students_icon=0x7f09004c;
+        public static final int recommended_teachers=0x7f090037;
+        public static final int recommended_teachers_icon=0x7f090038;
         public static final int remember_me=0x7f090004;
-        public static final int request_teacher=0x7f090066;
+        public static final int request_teacher=0x7f090063;
         public static final int sign_up=0x7f090006;
-        public static final int signin_button=0x7f090032;
-        public static final int student_button_1=0x7f090052;
-        public static final int student_button_2=0x7f090053;
-        public static final int student_button_3=0x7f090054;
-        public static final int student_icon=0x7f090051;
-        public static final int teacher_button_1=0x7f090046;
-        public static final int teacher_icon=0x7f090044;
-        public static final int user_panel=0x7f09005d;
-        public static final int username=0x7f09005f;
+        public static final int signin_button=0x7f09002f;
+        public static final int signup_title=0x7f090023;
+        public static final int student_button_1=0x7f09004f;
+        public static final int student_button_2=0x7f090050;
+        public static final int student_button_3=0x7f090051;
+        public static final int student_icon=0x7f09004e;
+        public static final int teacher_button_1=0x7f090043;
+        public static final int teacher_icon=0x7f090041;
+        public static final int user_panel=0x7f09005a;
+        public static final int username=0x7f09005c;
         public static final int username_input=0x7f090002;
-        public static final int viewpager=0x7f090070;
+        public static final int viewpager=0x7f09006d;
     }
     public static final class layout {
         public static final int activity_homepage=0x7f030000;
@@ -266,7 +263,7 @@ public final class R {
         public static final int account_verified_eg=0x7f05003e;
         public static final int action_settings=0x7f05000a;
         public static final int add_to_favourites=0x7f050026;
-        public static final int addrEmpty=0x7f050056;
+        public static final int addrEmpty=0x7f050059;
         public static final int address=0x7f050013;
         public static final int address_eg=0x7f050024;
         /** App basics 
@@ -274,22 +271,22 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int bio=0x7f050029;
         public static final int bio_eg=0x7f05002a;
-        public static final int birEmpty=0x7f050055;
+        public static final int birEmpty=0x7f050058;
         public static final int birthdate=0x7f050012;
         public static final int browse=0x7f050009;
         public static final int calendar_icon=0x7f05001c;
-        public static final int choice=0x7f050059;
+        public static final int choice=0x7f05005c;
         /**  Present Profile 
          */
-        public static final int collectSucess=0x7f050062;
+        public static final int collectSucess=0x7f050065;
         public static final int comments=0x7f05002d;
-        public static final int conPwdEmpty=0x7f050053;
-        public static final int conPwdErr=0x7f050054;
+        public static final int conPwdEmpty=0x7f050056;
+        public static final int conPwdErr=0x7f050057;
         public static final int edit_icon=0x7f05002e;
         public static final int edu=0x7f05002b;
         public static final int edu_eg=0x7f05002c;
         public static final int email=0x7f05000f;
-        public static final int emailEmpty=0x7f050051;
+        public static final int emailEmpty=0x7f050054;
         public static final int email_example=0x7f050010;
         public static final int email_verified=0x7f050039;
         public static final int email_verified_eg=0x7f05003a;
@@ -300,7 +297,7 @@ public final class R {
         /** Sign up 
          */
         public static final int head_image=0x7f05000c;
-        public static final int homePage=0x7f05005e;
+        public static final int homePage=0x7f050061;
         /** Homepage 
          */
         public static final int homepage=0x7f050014;
@@ -312,36 +309,41 @@ public final class R {
         /** Login 
          */
         public static final int login=0x7f050001;
-        public static final int loginSucess=0x7f050058;
+        public static final int loginSucess=0x7f05005b;
         public static final int mock_logo=0x7f05000b;
-        public static final int msgs=0x7f050060;
+        public static final int msgs=0x7f050063;
         public static final int my_fave_students=0x7f050019;
         public static final int my_fave_teachers=0x7f05001a;
         public static final int my_schedule=0x7f05001b;
         public static final int my_students=0x7f050018;
         public static final int my_teachers=0x7f050017;
         public static final int name=0x7f05000d;
-        public static final int nameLenErr=0x7f05005a;
+        public static final int nameLenErr=0x7f05005d;
         public static final int new_comment=0x7f050031;
         public static final int new_comment_eg=0x7f050032;
         public static final int password=0x7f050006;
         public static final int password_confirm=0x7f050007;
         public static final int payment_success=0x7f050037;
         public static final int payment_success_eg=0x7f050038;
-        public static final int personalPage=0x7f05005f;
+        public static final int personalPage=0x7f050062;
         public static final int phone=0x7f050011;
-        public static final int phoneEmpty=0x7f050052;
-        public static final int phoneLenErr=0x7f05005b;
+        public static final int phoneEmpty=0x7f050055;
+        public static final int phoneLenErr=0x7f05005e;
         public static final int phone_verified=0x7f05003b;
         public static final int phone_verified_eg=0x7f05003c;
+        public static final int pref_about=0x7f050050;
+        /** Settings 
+         */
+        public static final int pref_account=0x7f05004e;
+        public static final int pref_notif=0x7f05004f;
         /**  Main Activity 
          */
-        public static final int pressAgain=0x7f05005d;
+        public static final int pressAgain=0x7f050060;
         /** Profile 
          */
         public static final int profile_pic=0x7f050022;
-        public static final int pwdEmpty=0x7f05004f;
-        public static final int pwdLenErr=0x7f05005c;
+        public static final int pwdEmpty=0x7f050052;
+        public static final int pwdLenErr=0x7f05005f;
         public static final int recommended_students=0x7f050016;
         public static final int recommended_teachers=0x7f050015;
         public static final int remember_me=0x7f050008;
@@ -350,12 +352,12 @@ public final class R {
         public static final int request_teacher=0x7f050028;
         public static final int search=0x7f050021;
         public static final int see_details=0x7f05004d;
-        public static final int settings=0x7f050061;
+        public static final int settings=0x7f050064;
         public static final int sign_up=0x7f050002;
         public static final int sign_up_new_account=0x7f050003;
-        public static final int signupSucess=0x7f050057;
+        public static final int signupSucess=0x7f05005a;
         public static final int student_icon=0x7f05001e;
-        public static final int submitSucess=0x7f050063;
+        public static final int submitSucess=0x7f050066;
         public static final int teacher_icon=0x7f05001d;
         public static final int time_eg_1=0x7f05004b;
         public static final int time_eg_2=0x7f05004c;
@@ -368,7 +370,7 @@ public final class R {
         public static final int time_tuesday=0x7f050045;
         public static final int time_wednesday=0x7f050046;
         public static final int time_yesterday=0x7f050043;
-        public static final int uNameEmpty=0x7f050050;
+        public static final int uNameEmpty=0x7f050053;
         public static final int upcoming_lesson=0x7f050035;
         public static final int upcoming_lesson_eg=0x7f050036;
         public static final int user_eg_1=0x7f05003f;
@@ -379,7 +381,7 @@ public final class R {
         public static final int username_or_phone=0x7f050005;
         /**  Sign up Components 
          */
-        public static final int usrEmpty=0x7f05004e;
+        public static final int usrEmpty=0x7f050051;
     }
     public static final class style {
         /** 

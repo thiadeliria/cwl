@@ -33,7 +33,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		setContentView(R.layout.viewpager);
 
 		initView();
-		
+		//vp.setOffscreenPageLimit(2);
 		// ActionBar is initiated
 		actionBar = getActionBar();
 

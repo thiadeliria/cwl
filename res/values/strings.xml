@@ -96,7 +96,13 @@
     <string name="time_eg_1">下午 3:12</string>
     <string name="time_eg_2">上午 11:48</string>
     <string name="see_details">查看详情  ></string>
-
+    
+    <!--Settings -->
+    <string name="pref_account">账户</string>
+    <string name="pref_notif">消息</string>
+    <string name="pref_about">关于梦响</string>
+    
+    
     <!-- Sign up Components -->
     <string name="usrEmpty">请输入用户名</string>
     <string name="pwdEmpty">请输入密码</string>
