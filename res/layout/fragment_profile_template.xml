@@ -1,6 +1,5 @@
-<ScrollView
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -9,43 +8,53 @@
         android:id="@+id/parent_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f9f9f9"
-        android:padding="9dp" >
+        android:background="#f9f9f9" >
 
         <RelativeLayout
             android:id="@+id/user_panel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="140dp"
             android:layout_marginBottom="6dp"
-            android:background="@drawable/panel_background"
-            android:padding="12dp" >
-            
-            <ImageButton 
-                android:id="@+id/edit_button"
-                android:contentDescription="@string/edit_icon"
-                android:layout_width="19dp"
-                android:layout_height="19dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/ic_edit_dark"/>
+            android:background="#0082b4" >
 
             <ImageView
                 android:id="@+id/profile_pic"
                 android:contentDescription="@string/profile_pic"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
-                android:src="@drawable/ic_teacher_dark" />
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="27dp"
+                android:src="@drawable/t_01" />
+            
+            <ImageView
+                android:id="@+id/profile_border"
+                android:contentDescription="@string/profile_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_border_blue" />
 
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="21dp"
+                android:layout_marginLeft="28dp"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@+id/profile_pic"
+                android:layout_alignTop="@+id/profile_pic"
                 android:text="@string/username_eg"
-                android:textColor="#0d212b"
-                android:textSize="21sp" />
+                android:textColor="#ffffff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/teacher_tag"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignTop="@+id/username"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@+id/username"
+                android:contentDescription="@string/teacher_icon"
+                android:src="@drawable/ic_teacher" />
 
             <TextView
                 android:id="@+id/address"
@@ -55,7 +64,7 @@
                 android:layout_below="@+id/username"
                 android:layout_marginTop="5dp"
                 android:text="@string/address_eg"
-                android:textColor="#a6a6a6"
+                android:textColor="#ffffff"
                 android:textSize="15sp" />
 
             <TextView
@@ -66,18 +75,36 @@
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
                 android:text="@string/interests_eg"
-                android:textColor="#a6a6a6"
+                android:textColor="#ffffff"
                 android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/edit_button_01"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_edit_dark"
+                android:contentDescription="@string/edit_icon" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/bio_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
             android:layout_below="@+id/user_panel"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
+
+            <ImageButton
+                android:id="@+id/edit_button_02"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_edit_dark"
+                android:contentDescription="@string/edit_icon" />
 
             <TextView
                 android:id="@+id/bio_title"
@@ -101,10 +128,19 @@
             android:id="@+id/edu_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
             android:layout_below="@+id/bio_panel"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
+
+            <ImageButton
+                android:id="@+id/edit_button_03"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_edit_dark"
+                android:contentDescription="@string/edit_icon" />
 
             <TextView
                 android:id="@+id/edu_title"
@@ -123,13 +159,13 @@
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
-        
+
         <RelativeLayout
             android:id="@+id/comments_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
             android:layout_below="@+id/edu_panel"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
 
@@ -140,7 +176,6 @@
                 android:text="@string/comments"
                 android:textColor="#0d212b"
                 android:textSize="18sp" />
-            
         </RelativeLayout>
     </RelativeLayout>
 

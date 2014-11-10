@@ -20,7 +20,94 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
+            <CalendarView
+                android:id="@+id/calendarView1"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:firstDayOfWeek="2"
+                android:showWeekNumber="false"
+                android:shownWeekCount="4" />
+
+            <!-- temporarily here to hide part of calendar widget -->
+
+            <ImageView
+                android:id="@+id/strip"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#ffffff"
+                android:contentDescription="@string/strip" />
+
+            <TextView
+                android:id="@+id/mon"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/mon" />
+
+            <TextView
+                android:id="@+id/tue"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mon"
+                android:layout_marginLeft="26dp"
+                android:layout_toRightOf="@+id/mon"
+                android:text="@string/tue" />
+
+            <TextView
+                android:id="@+id/wed"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mon"
+                android:layout_marginLeft="25.6dp"
+                android:layout_toRightOf="@+id/tue"
+                android:text="@string/wed" />
+
+            <TextView
+                android:id="@+id/thu"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mon"
+                android:layout_marginLeft="25.6dp"
+                android:layout_toRightOf="@+id/wed"
+                android:text="@string/thu" />
+
+            <TextView
+                android:id="@+id/fri"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mon"
+                android:layout_marginLeft="25.6dp"
+                android:layout_toRightOf="@+id/thu"
+                android:text="@string/fri" />
+
+            <TextView
+                android:id="@+id/sat"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mon"
+                android:layout_marginLeft="26dp"
+                android:layout_toRightOf="@+id/fri"
+                android:text="@string/sat" />
+
+            <TextView
+                android:id="@+id/sun"
+                style="@style/WeekdayText"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/mon"
+                android:layout_marginLeft="26dp"
+                android:layout_toRightOf="@+id/sat"
+                android:text="@string/sun" />
+
             <!-- Links to activity_schedule.xml -->
+
             <Button
                 android:id="@+id/my_schedule"
                 style="@style/PanelText"
@@ -42,33 +129,11 @@
                 android:src="@drawable/ic_calendar_dark" />
         </RelativeLayout>
 
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="horizontal" >
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="horizontal" >
-
-                <CalendarView
-                    android:id="@+id/calendarView1"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:firstDayOfWeek="2"
-			        android:showWeekNumber="false"
-                    android:shownWeekCount="2" />
-            </LinearLayout>
-        </HorizontalScrollView>
-
         <RelativeLayout
             android:id="@+id/button_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="7dp"
-            android:layout_marginTop="7dp" >
+            android:layout_marginBottom="7dp" >
 
             <!-- Will link to full page of 我的收藏, each user listed. -->
 
@@ -107,7 +172,9 @@
 
                 <!-- Each button links to profile pg of selected user -->
 
-                <!-- Links to fragment_profile_t_17  -->
+
+                <!-- Links to fragment_profile_t_17 -->
+
                 <ImageButton
                     android:id="@+id/rec_button_1"
                     android:layout_width="86dp"
@@ -117,7 +184,8 @@
                     android:background="@drawable/t_17"
                     android:contentDescription="@string/teacher_icon" />
 
-                <!-- Links to fragment_profile_t_03  -->
+                <!-- Links to fragment_profile_t_03 -->
+
                 <ImageButton
                     android:id="@+id/rec_button_2"
                     android:layout_width="86dp"
@@ -126,7 +194,8 @@
                     android:background="@drawable/t_03"
                     android:contentDescription="@string/teacher_icon" />
 
-                <!-- Links to fragment_profile_t_02  -->
+                <!-- Links to fragment_profile_t_02 -->
+
                 <ImageButton
                     android:id="@+id/rec_button_3"
                     android:layout_width="86dp"
@@ -135,7 +204,8 @@
                     android:background="@drawable/t_02"
                     android:contentDescription="@string/teacher_icon" />
 
-                <!-- Links to fragment_profile_t_20  -->
+                <!-- Links to fragment_profile_t_20 -->
+
                 <ImageButton
                     android:id="@+id/rec_button_4"
                     android:layout_width="86dp"
@@ -144,7 +214,8 @@
                     android:background="@drawable/t_20"
                     android:contentDescription="@string/teacher_icon" />
 
-                <!-- Links to fragment_profile_t_04  -->
+                <!-- Links to fragment_profile_t_04 -->
+
                 <ImageButton
                     android:id="@+id/rec_button_5"
                     android:layout_width="86dp"
@@ -199,7 +270,9 @@
 
                 <!-- To be button. Will link to full page of 我的收藏教师, each user listed. -->
 
-                <!-- Links to fragment_profile_t_06  -->
+
+                <!-- Links to fragment_profile_t_06 -->
+
                 <ImageButton
                     android:id="@+id/teacher_button_1"
                     android:layout_width="86dp"
@@ -255,7 +328,9 @@
 
                 <!-- Each button links to profile pg of selected user. -->
 
-                <!-- Links to fragment_profile_t_06  -->
+
+                <!-- Links to fragment_profile_t_06 -->
+
                 <ImageButton
                     android:id="@+id/fave_button_1"
                     android:layout_width="86dp"
@@ -265,7 +340,8 @@
                     android:background="@drawable/t_06"
                     android:contentDescription="@string/teacher_icon" />
 
-                <!-- Links to fragment_profile_t_08  -->
+                <!-- Links to fragment_profile_t_08 -->
+
                 <ImageButton
                     android:id="@+id/fave_button_2"
                     android:layout_width="86dp"
@@ -274,7 +350,8 @@
                     android:background="@drawable/t_08"
                     android:contentDescription="@string/teacher_icon" />
 
-                <!-- Links to fragment_profile_t_11  -->
+                <!-- Links to fragment_profile_t_11 -->
+
                 <ImageButton
                     android:id="@+id/fave_button_3"
                     android:layout_width="86dp"
