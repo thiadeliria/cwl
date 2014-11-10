@@ -101,6 +101,47 @@
     <string name="pref_account">账户</string>
     <string name="pref_notif">消息</string>
     <string name="pref_about">关于梦响</string>
+    <string name="pref_keep_logged_in">自动登录</string>
+    
+    <!--Schedule -->
+    <string name="year_2014">2014</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="twelve">12</string>
+    <string name="jan">一月</string>
+    <string name="feb">二月</string>
+    <string name="mar">三月</string>
+    <string name="apr">四月</string>
+    <string name="may">五月</string>
+    <string name="jun">六月</string>
+    <string name="jul">七月</string>
+    <string name="aug">八月</string>
+    <string name="sep">九月</string>
+    <string name="oct">十月</string>
+    <string name="nov">十一月</string>
+    <string name="dec">十二月</string>
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string name="sun">日</string>
+    <string name="strip">strip</string>
+    <string name="today">今日</string>
+    <string name="schedule_icon">schedule icon</string>
+    <string name="previous_icon">previous icon</string>
+    <string name="next_icon">next icon</string>
+    <string name="no_events">无计划</string>
     
     
     <!-- Sign up Components -->

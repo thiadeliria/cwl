@@ -87,7 +87,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
                 android:contentDescription="@string/favourites_icon"
-                android:src="@drawable/ic_add_contact" />
+                android:src="@drawable/ic_add" />
 
             <View
                 android:id="@+id/filler_view"

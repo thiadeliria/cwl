@@ -16,7 +16,6 @@ public class SettingsFragment extends Fragment {
 
 		return content;
 	}
-
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);

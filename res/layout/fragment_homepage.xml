@@ -20,8 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <!-- Button will link to full page of 课程计划 with calendar. Currently null. -->
-
+            <!-- Links to activity_schedule.xml -->
             <Button
                 android:id="@+id/my_schedule"
                 style="@style/PanelText"
@@ -57,9 +56,9 @@
                 <CalendarView
                     android:id="@+id/calendarView1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="16dp"
+                    android:layout_height="50dp"
                     android:firstDayOfWeek="2"
+			        android:showWeekNumber="false"
                     android:shownWeekCount="2" />
             </LinearLayout>
         </HorizontalScrollView>
