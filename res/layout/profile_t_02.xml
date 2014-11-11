@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:contentDescription="@string/profile_pic"
-                android:src="@drawable/pr_red_leaves" />
+                android:src="@drawable/pr_purple_city" />
 
             <ImageView
                 android:id="@+id/profile_ring"

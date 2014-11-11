@@ -1,43 +1,69 @@
-<ScrollView
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/parent_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f9f9f9"
-        android:orientation="vertical"
-        android:padding="9dp" >
+        android:background="#f9f9f9" >
 
         <RelativeLayout
             android:id="@+id/user_panel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="160dp"
             android:layout_marginBottom="6dp"
-            android:background="@drawable/panel_background"
-            android:padding="12dp" >
+            android:background="#0082b4" >
 
             <ImageView
                 android:id="@+id/profile_pic"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
                 android:contentDescription="@string/profile_pic"
                 android:src="@drawable/t_03" />
+
+            <ImageView
+                android:id="@+id/profile_border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/profile_pic"
+                android:src="@drawable/pr_red_leaves" />
+
+            <ImageView
+                android:id="@+id/profile_ring"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="21dp"
+                android:contentDescription="@string/profile_pic"
+                android:src="@drawable/profile_pic_ring" />
 
             <TextView
                 android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="21dp"
+                android:layout_alignTop="@+id/profile_pic"
+                android:layout_marginLeft="28dp"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@+id/profile_pic"
                 android:text="马海燕"
-                android:textColor="#0d212b"
-                android:textSize="21sp" />
+                android:textColor="#ffffff"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/teacher_tag"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_alignTop="@+id/username"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@+id/username"
+                android:contentDescription="@string/teacher_icon"
+                android:src="@drawable/ic_teacher" />
 
             <TextView
                 android:id="@+id/address"
@@ -47,7 +73,7 @@
                 android:layout_below="@+id/username"
                 android:layout_marginTop="5dp"
                 android:text="@string/address_eg"
-                android:textColor="#a6a6a6"
+                android:textColor="#ffffff"
                 android:textSize="15sp" />
 
             <TextView
@@ -58,72 +84,39 @@
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
                 android:text="钢琴，乐理"
-                android:textColor="#a6a6a6"
+                android:textColor="#ffffff"
                 android:textSize="15sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/buttons_panel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp" >
-
+            
             <Button
-                android:id="@+id/add_to_favourites"
-                android:layout_width="wrap_content"
-                android:layout_height="44dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginRight="6dp"
-                android:layout_toLeftOf="@+id/filler_view"
-                android:background="@drawable/button_yellow"
-                android:paddingLeft="27dp"
+                android:id="@+id/add_to_fave_button"
+                android:layout_width="64dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginRight="8dp"
+                android:layout_below="@+id/interests"
+                android:background="@drawable/button_profile"
                 android:text="@string/add_to_favourites"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/favourites_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:contentDescription="@string/favourites_icon"
-                android:src="@drawable/ic_add" />
-
-            <View
-                android:id="@+id/filler_view"
-                android:layout_width="1dp"
-                android:layout_height="44dp"
-                android:layout_centerHorizontal="true"
-                android:visibility="invisible" />
-
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            
             <Button
-                android:id="@+id/request_teacher"
-                android:layout_width="wrap_content"
-                android:layout_height="44dp"
-                android:layout_alignParentRight="true"
-                android:layout_toRightOf="@+id/filler_view"
-                android:background="@drawable/button_red"
-                android:paddingLeft="30dp"
+                android:id="@+id/send_request_button"
+                android:layout_width="84dp"
+                android:layout_height="28dp"
+                android:layout_toRightOf="@+id/add_to_fave_button"
+                android:layout_alignTop="@+id/add_to_fave_button"
+                android:background="@drawable/button_profile"
                 android:text="@string/request_teacher"
-                android:textColor="#ffffff"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:id="@+id/teacher_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignLeft="@+id/request_teacher"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:contentDescription="@string/teacher_icon"
-                android:src="@drawable/ic_teacher" />
+                android:textSize="14sp"
+                android:textStyle="bold" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/bio_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/user_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
@@ -150,6 +143,7 @@
             android:id="@+id/edu_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/bio_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
@@ -171,11 +165,12 @@
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
-        
+
         <RelativeLayout
             android:id="@+id/comments_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/edu_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
@@ -187,8 +182,21 @@
                 android:text="@string/comments"
                 android:textColor="#0d212b"
                 android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comments_title"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/no_comments"
+                android:textColor="#aeaeae"
+                android:textSize="14sp"
+                android:textStyle="italic" />
             
         </RelativeLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

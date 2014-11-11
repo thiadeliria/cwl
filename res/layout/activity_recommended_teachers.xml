@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/panel_1"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@drawable/panel_background"
+            android:clickable="true"
+            android:padding="11dp" >
+
+            <ImageView
+                android:id="@+id/rec_teacher_1"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/t_17" />
+
+            <TextView
+                android:id="@+id/rec_teacher_1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/rec_teacher_1"
+                android:text="李中辉"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_1_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_1_name"
+                android:layout_below="@+id/rec_teacher_1_name"
+                android:text="@string/address_eg"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_1_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_1_name"
+                android:layout_below="@+id/rec_teacher_1_location"
+                android:text="大提琴，小提琴"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/panel_2"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@drawable/panel_background"
+            android:clickable="true"
+            android:padding="11dp" >
+
+            <ImageView
+                android:id="@+id/rec_teacher_2"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/t_03" />
+
+            <TextView
+                android:id="@+id/rec_teacher_2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/rec_teacher_2"
+                android:text="马海燕"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_2_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_2_name"
+                android:layout_below="@+id/rec_teacher_2_name"
+                android:text="@string/address_eg"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_2_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_2_name"
+                android:layout_below="@+id/rec_teacher_2_location"
+                android:text="钢琴，乐理"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/panel_3"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@drawable/panel_background"
+            android:clickable="true"
+            android:padding="11dp" >
+
+            <ImageView
+                android:id="@+id/rec_teacher_3"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/t_02" />
+
+            <TextView
+                android:id="@+id/rec_teacher_3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/rec_teacher_3"
+                android:text="张越"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_3_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_3_name"
+                android:layout_below="@+id/rec_teacher_3_name"
+                android:text="@string/address_eg"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_3_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_3_name"
+                android:layout_below="@+id/rec_teacher_3_location"
+                android:text="架子鼓，声乐"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/panel_4"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@drawable/panel_background"
+            android:clickable="true"
+            android:padding="11dp" >
+
+            <ImageView
+                android:id="@+id/rec_teacher_4"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/t_20" />
+
+            <TextView
+                android:id="@+id/rec_teacher_4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/rec_teacher_4"
+                android:text="郭莉莉"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_4_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_4_name"
+                android:layout_below="@+id/rec_teacher_4_name"
+                android:text="@string/address_eg"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_4_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_4_name"
+                android:layout_below="@+id/rec_teacher_4_location"
+                android:text="声乐"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+               <RelativeLayout
+            android:id="@+id/panel_5"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@drawable/panel_background"
+            android:clickable="true"
+            android:padding="11dp" >
+
+            <ImageView
+                android:id="@+id/rec_teacher_5"
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/t_04" />
+
+            <TextView
+                android:id="@+id/rec_teacher_5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_toRightOf="@+id/rec_teacher_5"
+                android:text="龙婉容"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_5_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_5_name"
+                android:layout_below="@+id/rec_teacher_5_name"
+                android:text="@string/address_eg"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rec_teacher_5_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rec_teacher_5_name"
+                android:layout_below="@+id/rec_teacher_5_location"
+                android:text="钢琴、乐理"
+                android:textColor="#aeaeae"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -17,7 +17,7 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/mock_logo"
         android:paddingBottom="22dp"
-        android:src="@drawable/cwl_logo_curly" />
+        android:src="@drawable/logo_curly" />
 
     <EditText
         android:id="@+id/username_input"

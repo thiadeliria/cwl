@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!-- This is the first page that the user sees in Student Mode. -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -220,6 +221,7 @@
             android:layout_marginBottom="7dp"
             android:layout_marginTop="7dp" >
 
+<!--             Links to fragment_my_teachers.xml -->
             <Button
                 android:id="@+id/my_teachers"
                 style="@style/PanelText"
