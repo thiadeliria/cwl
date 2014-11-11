@@ -5,7 +5,8 @@
     <string name="app_name">梦响</string>
     
     <!--Login -->
-    <string name="login">登录</string>
+    <string name="login_t">教师登录</string>
+    <string name="login_s">学生登录</string>
     <string name="sign_up">注册</string>
     <string name="sign_up_new_account">注册新账户</string>
     <string name="username">用户名</string>
@@ -55,6 +56,7 @@
     <string name="add_to_favourites">关注</string>
     <string name="favourites_icon">favourites icon</string>
     <string name="request_teacher">加为教师</string>
+    <string name="request_student">加为学生</string>
     <string name="bio">简介</string>
     <string name="bio_eg">李小胖，琵琶演奏家，专业琵琶教师，立足于对中国传统音乐的理解，演奏的乐曲风格宽泛，
         音乐变化丰富。有十五年的琵琶教学经验，具有高度的工作热情，能够在多方面培养学生对民乐的兴趣和对音乐艺术的热爱。</string>

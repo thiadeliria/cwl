@@ -50,7 +50,7 @@
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="6dp"
                 android:layout_toRightOf="@+id/profile_pic"
-                android:text="郑歆"
+                android:text="郑学生"
                 android:textColor="#ffffff"
                 android:textSize="21sp"
                 android:textStyle="bold" />
@@ -91,7 +91,7 @@
         <RelativeLayout
             android:id="@+id/bio_panel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_below="@+id/user_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
@@ -119,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="@string/bio_eg"
+                android:text="没有人料到低迷的音符将是悲剧走来的足音，指尖不理会韵律和理性的之间颤摆换来的是感性的扭曲，大提琴的闷响。仍在继续，大提琴将演奏起这结局？"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -127,7 +127,7 @@
         <RelativeLayout
             android:id="@+id/comments_panel"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="140dp"
             android:layout_below="@+id/bio_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"

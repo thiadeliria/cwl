@@ -2,47 +2,4 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
-    <!-- opens up new screen -->
-
-    <PreferenceScreen
-        android:persistent="false"
-        android:title="@string/login" >
-    </PreferenceScreen>
-
-    <!-- category title -->
-
-    <PreferenceCategory
-        android:title="@string/pref_account" >
-
-        <CheckBoxPreference
-            android:key="pref_keep_logged_in"
-            android:summary="@string/pref_keep_logged_in"
-            android:title="@string/pref_keep_logged_in"
-            android:defaultValue="true" />
-        
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/pref_notif" >
-
-        <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="pref_sync"
-            android:summary="@string/login"
-            android:title="@string/pref_notif" />
-
-        <ListPreference
-            android:defaultValue="@string/login"
-            android:dependency="pref_sync"
-            android:dialogTitle="@string/login"
-            android:key="pref_syncConnectionType"
-            android:title="@string/login" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:key="pref_key_storage_settings"
-        android:title="@string/pref_about" >
-    </PreferenceCategory>
-
 </PreferenceScreen>

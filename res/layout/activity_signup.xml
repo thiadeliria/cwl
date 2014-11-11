@@ -32,7 +32,6 @@
         android:layout_marginBottom="19dp"
         android:textColor="#ffffff"
         android:textSize="30sp"
-        android:textStyle="bold"
         android:text="@string/sign_up" />
 
     <RelativeLayout

@@ -97,6 +97,7 @@
                 android:layout_below="@+id/interests"
                 android:background="@drawable/button_profile"
                 android:text="@string/add_to_favourites"
+                android:textColor="#ffffff"
                 android:textSize="14sp"
                 android:textStyle="bold" />
             
@@ -108,6 +109,7 @@
                 android:layout_alignTop="@+id/add_to_fave_button"
                 android:background="@drawable/button_profile"
                 android:text="@string/request_teacher"
+                android:textColor="#ffffff"
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </RelativeLayout>

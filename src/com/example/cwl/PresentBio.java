@@ -17,8 +17,8 @@ public class PresentBio extends ActionBarActivity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.fragment_profile_template);
 		
-		addToFav = (Button) findViewById(R.id.add_to_favourites);
-		submit = (Button) findViewById(R.id.request_teacher);
+		//addToFav = (Button) findViewById(R.id.add_to_favourites);
+		//submit = (Button) findViewById(R.id.request_teacher);
 		
 		// Add to favorites
 		addToFav.setOnClickListener(new Button.OnClickListener() {
