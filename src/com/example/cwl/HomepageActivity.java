@@ -28,8 +28,8 @@ public class HomepageActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.fragment_homepage);
 		
-		teacher = (Button) findViewById(R.id.teacher_button_1);
-		myFavTeacher = (Button) findViewById(R.id.fave_button_1);
+		teacher = (Button) findViewById(R.id.my_teachers);
+		myFavTeacher = (Button) findViewById(R.id.fave_teachers);
 		
 		// ActionBar is initiated
 		ActionBar actionBar = getActionBar();

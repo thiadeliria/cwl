@@ -13,17 +13,17 @@
         <RelativeLayout
             android:id="@+id/user_panel"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="160dp"
             android:layout_marginBottom="6dp"
             android:background="#0082b4" >
 
             <ImageView
                 android:id="@+id/profile_pic"
                 android:contentDescription="@string/profile_pic"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginLeft="33dp"
-                android:layout_marginTop="27dp"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/t_01" />
             
             <ImageView
@@ -31,7 +31,16 @@
                 android:contentDescription="@string/profile_pic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/profile_border_blue" />
+                android:src="@drawable/pr_blue_sky" />
+
+            <ImageView
+                android:id="@+id/profile_ring"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="21dp"
+                android:contentDescription="@string/profile_pic"
+                android:src="@drawable/profile_pic_ring" />
 
             <TextView
                 android:id="@+id/username"
@@ -82,9 +91,10 @@
                 android:id="@+id/edit_button_01"
                 android:layout_width="19dp"
                 android:layout_height="19dp"
+                android:layout_alignTop="@+id/teacher_tag"
+                android:layout_marginRight="15dp"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/ic_edit_dark"
+                android:background="@drawable/ic_edit"
                 android:contentDescription="@string/edit_icon" />
         </RelativeLayout>
 
@@ -176,6 +186,19 @@
                 android:text="@string/comments"
                 android:textColor="#0d212b"
                 android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comments_title"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/no_comments"
+                android:textColor="#aeaeae"
+                android:textSize="14sp"
+                android:textStyle="italic" />
         </RelativeLayout>
     </RelativeLayout>
 

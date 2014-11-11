@@ -18,7 +18,6 @@
     <string name="mock_logo">Mock logo</string>
     
     <!--Sign up -->
-    <string name="head_image">Head Image</string>
     <string name="name">姓名</string>
     <string name="gender">性别</string>
     <string-array name="gender_array">
@@ -31,6 +30,7 @@
     <string name="phone">手机号</string>
     <string name="birthdate">出生日期</string>
     <string name="address">地址</string>
+    <string name="head_image">Head Image</string>
     
     <!--Homepage -->
     <string name="homepage">首页</string>
@@ -38,8 +38,8 @@
     <string name="recommended_students">推荐学生</string>
     <string name="my_teachers">我的教师</string>
     <string name="my_students">我的学生</string>
-    <string name="my_fave_students">我的收藏学生</string>
-    <string name="my_fave_teachers">我的收藏教师</string>
+    <string name="my_fave_students">我关注的学生</string>
+    <string name="my_fave_teachers">我关注的教师</string>
     <string name="my_schedule">我的课程计划</string>
     <string name="calendar_icon">calendar icon</string>
     <string name="teacher_icon">teacher icon</string>
@@ -49,20 +49,24 @@
     <string name="search">search</string>
     
     <!--Profile -->
-    <string name="profile_pic">Profile picture</string>
     <string name="username_eg">李小胖</string>
     <string name="address_eg">北京市</string>
     <string name="interests_eg">琵琶</string>
-    <string name="add_to_favourites">加入收藏</string>
+    <string name="add_to_favourites">关注</string>
     <string name="favourites_icon">favourites icon</string>
-    <string name="request_teacher">提交上课请求</string>
+    <string name="request_teacher">加为教师</string>
     <string name="bio">简介</string>
     <string name="bio_eg">李小胖，琵琶演奏家，专业琵琶教师，立足于对中国传统音乐的理解，演奏的乐曲风格宽泛，
         音乐变化丰富。有十五年的琵琶教学经验，具有高度的工作热情，能够在多方面培养学生对民乐的兴趣和对音乐艺术的热爱。</string>
     <string name="edu">学历</string>
     <string name="edu_eg">1981年毕业于山寨音乐学院民乐系，现山寨音乐学院民乐系副教授。</string>
     <string name="comments">评价</string>
+    <string name="no_comments">目前无评价</string>
+    <string name="profile_pic">profile picture</string>
     <string name="edit_icon">edit icon</string>
+    <string name="add_to_fave_button">add to favourites</string>
+    <string name="send_request_button">send request</string>
+    
     
     <!--Notifications -->
     <string name="incoming_request">您有新的上课请求</string>
