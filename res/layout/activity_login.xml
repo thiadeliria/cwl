@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/bgd_piano"
     android:paddingBottom="1dp"
     android:paddingLeft="21dp"
     android:paddingRight="21dp"
@@ -53,7 +53,7 @@
         android:layout_marginTop="3dp"
         android:checked="false"
         android:text="@string/remember_me"
-        android:textColor="#22526c" />
+        android:textColor="#ffffff" />
 
     <Button
         android:id="@+id/login_button"
