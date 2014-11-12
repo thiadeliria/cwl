@@ -18,7 +18,7 @@
         android:layout_marginLeft="14dp"
         android:text="@string/account"
         android:textColor="#a0a0a0"
-        android:textSize="19sp" />
+        android:textSize="17sp" />
 
     <RelativeLayout
         android:id="@+id/panel_1"
@@ -26,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="7dp"
         android:background="#ffffff"
-        android:clickable="true"
         android:paddingBottom="7dp"
         android:paddingLeft="14dp"
         android:paddingRight="14dp"
@@ -51,21 +50,37 @@
             android:layout_alignParentRight="true"
             android:text="@string/account_id" />
 
+        <ImageView
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/account"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
+
         <TextView
             android:id="@+id/change_password"
             style="@style/SettingLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/account"
+            android:layout_below="@+id/divider1"
             android:layout_marginBottom="6dp"
             android:text="@string/change_password" />
+
+        <ImageView
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/change_password"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
 
         <TextView
             android:id="@+id/keep_logged_in"
             style="@style/SettingLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/change_password"
+            android:layout_below="@+id/divider2"
             android:layout_marginBottom="6dp"
             android:text="@string/keep_logged_in" />
 
@@ -77,12 +92,20 @@
             android:layout_alignTop="@+id/keep_logged_in"
             android:checked="true" />
 
+        <ImageView
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/keep_logged_in"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
+
         <TextView
             android:id="@+id/add_phone"
             style="@style/SettingLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/keep_logged_in"
+            android:layout_below="@+id/divider3"
             android:layout_marginBottom="6dp"
             android:text="@string/add_phone" />
 
@@ -95,12 +118,20 @@
             android:layout_alignRight="@+id/account_id"
             android:text="@string/not_verified" />
 
+        <ImageView
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/add_phone"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
+
         <TextView
             android:id="@+id/add_email"
             style="@style/SettingLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/add_phone"
+            android:layout_below="@+id/divider4"
             android:text="@string/add_email" />
 
         <TextView
@@ -117,51 +148,128 @@
         android:id="@+id/panel_2_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
+        android:layout_marginLeft="14dp"
         android:text="@string/notif"
         android:textColor="#a0a0a0"
-        android:textSize="19sp" />
+        android:textSize="17sp" />
 
     <RelativeLayout
         android:id="@+id/panel_2"
         android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:layout_marginBottom="2dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
         android:background="#ffffff"
-        android:clickable="true"
-        android:padding="5dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
         android:textColor="#f9f9f9"
         android:textSize="15sp" >
+
+        <TextView
+            android:id="@+id/notify_me"
+            style="@style/SettingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="@string/notify_me" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/notify_me"
+            android:checked="true" />
+
+        <ImageView
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/notify_me"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
+
+        <TextView
+            android:id="@+id/vibrate"
+            style="@style/SettingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider6"
+            android:layout_marginBottom="6dp"
+            android:text="@string/vibrate" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/vibrate"
+            android:checked="true" />
+
+        <ImageView
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/vibrate"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
+
+        <TextView
+            android:id="@+id/volume"
+            style="@style/SettingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider7"
+            android:layout_marginBottom="6dp"
+            android:text="@string/set_volume" />
     </RelativeLayout>
 
     <TextView
         android:id="@+id/panel_3_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:text="@string/notif"
+        android:layout_marginLeft="14dp"
+        android:text="@string/about"
         android:textColor="#a0a0a0"
-        android:textSize="19sp" />
+        android:textSize="17sp" />
 
     <RelativeLayout
         android:id="@+id/panel_3"
         android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:layout_marginBottom="2dp"
+        android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:clickable="true"
-        android:padding="5dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
         android:textColor="#f9f9f9"
         android:textSize="15sp" >
 
         <TextView
-            android:id="@+id/notif_3_text"
-            style="@style/NotifText"
+            android:id="@+id/about_us"
+            style="@style/SettingLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/notif_2_label"
-            android:layout_below="@+id/notif_2_label"
-            android:text="@string/upcoming_lesson_eg" />
+            android:layout_marginBottom="6dp"
+            android:text="@string/about_us" />
+
+        <ImageView
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/about_us"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bgd_divider" />
+
+        <TextView
+            android:id="@+id/sign_out"
+            style="@style/SettingLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider8"
+            android:layout_marginBottom="6dp"
+            android:text="@string/sign_out" />
     </RelativeLayout>
 
 </LinearLayout>

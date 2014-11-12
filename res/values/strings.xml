@@ -109,11 +109,16 @@
     <string name="account_name">账户</string>
     <string name="account_id">example001</string>
     <string name="about">关于梦响</string>
+    <string name="about_us">关于我们</string>
     <string name="keep_logged_in">自动登录</string>
     <string name="add_phone">绑定手机</string>
     <string name="add_email">绑定邮箱</string>
     <string name="not_verified">未绑定</string>
     <string name="change_password">修改账户密码</string>
+    <string name="notify_me">新消息提醒</string>
+    <string name="vibrate">振动</string>
+    <string name="set_volume">音量</string>
+    <string name="sign_out">退出</string>
     
     <!--Schedule -->
     <string name="year_2014">2014</string>
