@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" -->
-<!-- xmlns:tools="http://schemas.android.com/tools" -->
-<!-- android:layout_width="match_parent" -->
-<!-- android:layout_height="match_parent" -->
-<!-- android:orientation="vertical" > -->
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgd_guitar"
-    android:padding="12dp" >
+    android:orientation="vertical"
+    android:paddingTop="9dp"
+    android:paddingLeft="9dp" >
 
     <ImageView
         android:id="@+id/head_image"
         android:layout_width="wrap_content"
         android:layout_height="58dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
         android:layout_marginTop="7dp"
         android:adjustViewBounds="true"
         android:contentDescription="@string/head_image"
@@ -27,24 +24,25 @@
         android:id="@+id/signup_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/head_image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:text="@string/sign_up"
         android:textColor="#ffffff"
-        android:textSize="30sp"
-        android:text="@string/sign_up" />
+        android:textSize="30sp" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_title"
-        android:layout_marginRight="6dp" >
+        android:layout_marginRight="16dp" >
 
         <TextView
             android:id="@+id/name_prompt"
             style="@style/PromptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="21dp"
-            android:layout_marginRight="12dp"
+            android:layout_marginRight="16dp"
             android:layout_toLeftOf="@+id/name_input"
             android:text="@string/name" />
 
@@ -61,12 +59,11 @@
         <TextView
             android:id="@+id/gender_prompt"
             style="@style/PromptText"
-            android:layout_marginBottom="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginRight="9dp"
             android:layout_toLeftOf="@+id/gender_spinner"
             android:text="@string/gender" />
-
-        <!-- size comes up weird -->
 
         <Spinner
             android:id="@+id/gender_spinner"
@@ -78,6 +75,8 @@
         <TextView
             android:id="@+id/email_prompt"
             style="@style/PromptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/name_prompt"
             android:layout_marginBottom="21dp"
@@ -99,6 +98,8 @@
         <TextView
             android:id="@+id/phone_prompt"
             style="@style/PromptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/email_prompt"
             android:layout_marginBottom="21dp"
@@ -119,6 +120,8 @@
         <TextView
             android:id="@+id/password_prompt"
             style="@style/PromptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/phone_prompt"
             android:layout_marginBottom="21dp"
@@ -139,6 +142,8 @@
         <TextView
             android:id="@+id/confirm_password_prompt"
             style="@style/PromptText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignRight="@+id/name_prompt"
             android:layout_below="@+id/password_prompt"
             android:layout_marginBottom="21dp"
@@ -155,65 +160,18 @@
             android:background="@drawable/edit_text_oval"
             android:inputType="textPassword"
             android:padding="3dp" />
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/birthdate_prompt" -->
-        <!-- style="@style/PromptText" -->
-        <!-- android:layout_alignRight="@+id/name_prompt" -->
-        <!-- android:layout_below="@+id/confirm_password_prompt" -->
-        <!-- android:layout_marginBottom="21dp" -->
-        <!-- android:layout_toLeftOf="@+id/birthdate_input" -->
-        <!-- android:text="@string/birthdate" /> -->
-
-
-        <!-- should be picker -->
-
-
-        <!-- <EditText -->
-        <!-- android:id="@+id/birthdate_input" -->
-        <!-- android:layout_width="0dp" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignLeft="@+id/name_input" -->
-        <!-- android:layout_alignParentRight="true" -->
-        <!-- android:layout_below="@+id/confirm_password_prompt" -->
-        <!-- android:background="@drawable/edit_text_oval" -->
-        <!-- android:inputType="text" -->
-        <!-- android:padding="3dp" /> -->
-
-
-        <!-- <TextView -->
-        <!-- android:id="@+id/address_prompt" -->
-        <!-- style="@style/PromptText" -->
-        <!-- android:layout_alignRight="@+id/name_prompt" -->
-        <!-- android:layout_below="@+id/birthdate_prompt" -->
-        <!-- android:layout_marginBottom="30dp" -->
-        <!-- android:text="@string/address" /> -->
-
-
-        <!-- <EditText -->
-        <!-- android:id="@+id/address_input" -->
-        <!-- android:layout_width="0dp" -->
-        <!-- android:layout_height="wrap_content" -->
-        <!-- android:layout_alignLeft="@+id/name_input" -->
-        <!-- android:layout_alignParentRight="true" -->
-        <!-- android:layout_below="@+id/birthdate_prompt" -->
-        <!-- android:layout_toRightOf="@+id/address_prompt" -->
-        <!-- android:background="@drawable/edit_text_oval" -->
-        <!-- android:inputType="text" -->
-        <!-- android:padding="3dp" /> -->
-
-        <Button
-            android:id="@+id/signin_button"
-            android:layout_width="180dp"
-            android:layout_height="44dp"
-            android:layout_below="@+id/confirm_password_input"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/button_transparent"
-            android:text="@string/sign_up"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            android:textStyle="bold" />
     </RelativeLayout>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_transparent"
+        android:text="@string/sign_up"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
