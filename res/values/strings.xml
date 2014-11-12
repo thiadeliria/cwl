@@ -71,6 +71,7 @@
     
     
     <!--Notifications -->
+    <string name="notif">消息</string>
     <string name="incoming_request">您有新的上课请求</string>
     <string name="incoming_request_eg">殷悦 给您发送了上课请求。</string>
     <string name="new_comment">您有新的评价</string>
@@ -104,10 +105,15 @@
     <string name="see_details">查看详情  ></string>
     
     <!--Settings -->
-    <string name="pref_account">账户</string>
-    <string name="pref_notif">消息</string>
-    <string name="pref_about">关于梦响</string>
-    <string name="pref_keep_logged_in">自动登录</string>
+    <string name="account">账户</string>
+    <string name="account_name">账户</string>
+    <string name="account_id">example001</string>
+    <string name="about">关于梦响</string>
+    <string name="keep_logged_in">自动登录</string>
+    <string name="add_phone">绑定手机</string>
+    <string name="add_email">绑定邮箱</string>
+    <string name="not_verified">未绑定</string>
+    <string name="change_password">修改账户密码</string>
     
     <!--Schedule -->
     <string name="year_2014">2014</string>
