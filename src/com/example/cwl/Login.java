@@ -19,7 +19,8 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 public class Login extends ActionBarActivity {
 
 	// UI components
-	private Button login = null;
+	private Button loginS = null;
+	private Button loginT = null;
 	private Button signUp = null;
 	private EditText usrText = null;
 	private EditText pwdText = null;
@@ -28,12 +29,12 @@ public class Login extends ActionBarActivity {
 	private SharedPreferences sp;
 
 	// Activity's Preference
-	public static final String PREF = "Login_PREF";
-	public static final String PREF_usrText = "Login_UID";
+	//public static final String PREF = "Login_PREF";
+	//public static final String PREF_usrText = "Login_UID";
 
 	// OptionDialog button
-	protected static final int MENU_ABOUT = Menu.FIRST;
-	protected static final int MENU_QUIT = Menu.FIRST + 1;
+	//protected static final int MENU_ABOUT = Menu.FIRST;
+	//protected static final int MENU_QUIT = Menu.FIRST + 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,13 +42,14 @@ public class Login extends ActionBarActivity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_login);
 
-		login = (Button) findViewById(R.id.login_button);
+		loginS = (Button) findViewById(R.id.login_button_s);
+		loginT = (Button) findViewById(R.id.login_button_t);
 		signUp = (Button) findViewById(R.id.sign_up);
 		usrText = (EditText) findViewById(R.id.username_input);
 		pwdText = (EditText) findViewById(R.id.password_input);
 		pwdRem = (CheckBox) findViewById(R.id.remember_me);
 		
-		sp = this.getSharedPreferences("userInfo", Context.MODE_WORLD_READABLE);
+		sp = this.getSharedPreferences("userInfo", Context.MODE_PRIVATE);
 
 		usrText.setLongClickable(false);
 		pwdText.setLongClickable(false);
@@ -56,10 +58,54 @@ public class Login extends ActionBarActivity {
 			pwdRem.setChecked(true);
 			usrText.setText(sp.getString("uName", ""));
 			pwdText.setText(sp.getString("pwd", ""));
+			
+			/*if (sp.getBoolean("AUTO_ISCHECK", false)) {
+				pwdRem.setChecked(true);
+				Intent intent = new Intent(Login.this, Logo.class);
+				Login.this.startActivity(intent);
+			}*/
 		}
 
 		// Login button
-		login.setOnClickListener(new Button.OnClickListener() {
+		loginS.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				/*new Thread() {
+					public void run() {*/
+				String usrName = usrText.getText().toString();
+				if (usrName.trim().equals(""))
+					Toast.makeText(Login.this, R.string.usrEmpty, Toast.LENGTH_SHORT).show();
+
+				String pass = pwdText.getText().toString();
+				if (pass.trim().equals(""))
+					Toast.makeText(Login.this, R.string.pwdEmpty, Toast.LENGTH_SHORT).show();
+
+				if (!usrName.equals("") && !pass.equals("")) {
+					//Toast.makeText(Login.this, R.string.loginSucess, Toast.LENGTH_LONG).show();
+					if (pwdRem.isChecked()) {
+						Editor editor = sp.edit();
+						editor.putString("uName", usrName);
+						editor.putString("pwd", pass);
+						editor.commit();
+					}
+					Intent intent = new Intent();
+					//Login.this.startActivity(intent);  
+					intent.setClass(Login.this, MainActivityS.class);
+
+					/*Bundle bundle = new Bundle();
+					bundle.putString("usr", usrName);
+					bundle.putString("pass", pass);
+
+					intent.putExtras(bundle);*/
+					startActivity(intent);
+					Login.this.finish();
+				}
+					/*}
+				}.start();*/
+			}
+		});
+		
+		loginT.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				/*new Thread() {
@@ -81,13 +127,14 @@ public class Login extends ActionBarActivity {
 								editor.commit();
 							}
 							Intent intent = new Intent();
-							intent.setClass(Login.this, MainActivity.class);
+							//Login.this.startActivity(intent);  
+							intent.setClass(Login.this, MainActivityT.class);
 
-							Bundle bundle = new Bundle();
+							/*Bundle bundle = new Bundle();
 							bundle.putString("usr", usrName);
 							bundle.putString("pass", pass);
 
-							intent.putExtras(bundle);
+							intent.putExtras(bundle);*/
 							startActivity(intent);
 							Login.this.finish();
 						}
@@ -107,10 +154,14 @@ public class Login extends ActionBarActivity {
 		
 		pwdRem.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-				if (pwdRem.isChecked())
+				if (pwdRem.isChecked()) {
 					sp.edit().putBoolean("ISCHECK", true).commit();
-				else
+					//sp.edit().putBoolean("AUTO_ISCHECK", true).commit();
+				}
+				else {
 					sp.edit().putBoolean("ISCHECK", false).commit();
+					//sp.edit().putBoolean("AUTO_ISCHECK", false).commit();
+				}
 			}
 		});
 	}
