@@ -22,7 +22,7 @@
                 android:layout_height="117dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="23dp"
-                android:src="@drawable/t_03" />
+                android:src="@drawable/s_03" />
 
             <ImageView
                 android:id="@+id/profile_border"
@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/profile_pic"
-                android:src="@drawable/pr_red_leaves" />
+                android:src="@drawable/pr_pink_blossom" />
 
             <ImageView
                 android:id="@+id/profile_ring"
@@ -48,20 +48,10 @@
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="25dp"
                 android:layout_toRightOf="@+id/profile_pic"
-                android:text="马海燕"
+                android:text="郑娇"
                 android:textColor="#ffffff"
                 android:textSize="21sp"
                 android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/teacher_tag"
-                android:layout_width="21dp"
-                android:layout_height="21dp"
-                android:layout_alignTop="@+id/username"
-                android:layout_marginLeft="9dp"
-                android:layout_toRightOf="@+id/username"
-                android:contentDescription="@string/teacher_icon"
-                android:src="@drawable/ic_teacher" />
 
             <TextView
                 android:id="@+id/address"
@@ -81,45 +71,38 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="钢琴，乐理"
+                android:text="大提琴"
                 android:textColor="#ffffff"
                 android:textSize="15sp" />
-            
-            <Button
-                android:id="@+id/add_to_fave_button"
-                android:layout_width="64dp"
-                android:layout_height="28dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="140dp"
-                android:layout_marginRight="8dp"
-                android:layout_below="@+id/interests"
-                android:background="@drawable/button_profile"
-                android:text="@string/add_to_favourites"
-                android:textColor="#ffffff"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-            
-            <Button
-                android:id="@+id/send_request_button"
-                android:layout_width="84dp"
-                android:layout_height="28dp"
-                android:layout_toRightOf="@+id/add_to_fave_button"
-                android:layout_alignTop="@+id/add_to_fave_button"
-                android:background="@drawable/button_profile"
-                android:text="@string/request_teacher"
-                android:textColor="#ffffff"
-                android:textSize="14sp"
-                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/edit_button_01"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/username"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_edit"
+                android:contentDescription="@string/edit_icon" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/bio_panel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_below="@+id/user_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
+
+            <ImageButton
+                android:id="@+id/edit_button_02"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_edit_dark"
+                android:contentDescription="@string/edit_icon" />
 
             <TextView
                 android:id="@+id/bio_title"
@@ -134,34 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="马海燕，钢琴演奏家，专业钢琴、乐理教师，1994年获国家级优秀教学成果奖，1996获中国音协钢琴学会颁发的优秀中国作品奖。其多名学生凭钢琴专业以及优秀成绩保送借读于丘吉尔音乐学院、京城音乐学院、山北艺术学院等高等学院。"
-                android:textColor="#a6a6a6"
-                android:textSize="15sp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/edu_panel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/bio_panel"
-            android:layout_marginBottom="6dp"
-            android:background="@drawable/panel_background"
-            android:padding="12dp" >
-
-            <TextView
-                android:id="@+id/edu_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/edu"
-                android:textColor="#0d212b"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/edu_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/edu_title"
-                android:text="1988年毕业于京城音乐学院钢琴系，现京城音乐学院钢琴系教授，中国音协钢琴学会成员，华北青年乐团成员。"
+                android:text="没有人料到低迷的音符将是悲剧走来的足音，指尖不理会韵律和理性的之间颤摆换来的是感性的扭曲，大提琴的闷响。仍在继续，大提琴将演奏起这结局？"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -169,8 +125,8 @@
         <RelativeLayout
             android:id="@+id/comments_panel"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/edu_panel"
+            android:layout_height="140dp"
+            android:layout_below="@+id/bio_panel"
             android:layout_marginBottom="6dp"
             android:background="@drawable/panel_background"
             android:padding="12dp" >
@@ -188,15 +144,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/comments_title"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
                 android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/no_comments"
                 android:textColor="#aeaeae"
                 android:textSize="14sp"
                 android:textStyle="italic" />
-            
         </RelativeLayout>
     </RelativeLayout>
-
 </ScrollView>

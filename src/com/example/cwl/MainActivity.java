@@ -48,10 +48,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 //		ActionBar.Tab profileTab = actionBar.newTab().setText(R.string.personalPage);
 //		ActionBar.Tab notifTab = actionBar.newTab().setText(R.string.msgs);
 //		ActionBar.Tab settingsTab = actionBar.newTab().setText(R.string.settings);
-		ActionBar.Tab homepageTab = actionBar.newTab().setIcon(R.drawable.ic_home);
-		ActionBar.Tab profileTab = actionBar.newTab().setIcon(R.drawable.ic_profile);
-		ActionBar.Tab notifTab = actionBar.newTab().setIcon(R.drawable.ic_notif);
-		ActionBar.Tab settingsTab = actionBar.newTab().setIcon(R.drawable.ic_settings);
+		ActionBar.Tab homepageTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_home);
+		ActionBar.Tab profileTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_profile);
+		ActionBar.Tab notifTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_notif);
+		ActionBar.Tab settingsTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_settings);
 
 		// set the Tab listener. Now we can listen for clicks
 		homepageTab.setTabListener(this);

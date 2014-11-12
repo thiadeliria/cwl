@@ -15,7 +15,7 @@ public class PresentBio extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.fragment_profile_template);
+		setContentView(R.layout.my_profile_template_t);
 		
 		//addToFav = (Button) findViewById(R.id.add_to_favourites);
 		//submit = (Button) findViewById(R.id.request_teacher);

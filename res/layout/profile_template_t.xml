@@ -22,7 +22,7 @@
                 android:layout_height="117dp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="23dp"
-                android:src="@drawable/t_03" />
+                android:src="@drawable/t_02" />
 
             <ImageView
                 android:id="@+id/profile_border"
@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/profile_pic"
-                android:src="@drawable/pr_red_leaves" />
+                android:src="@drawable/pr_purple_city" />
 
             <ImageView
                 android:id="@+id/profile_ring"
@@ -48,7 +48,7 @@
                 android:layout_marginLeft="28dp"
                 android:layout_marginTop="25dp"
                 android:layout_toRightOf="@+id/profile_pic"
-                android:text="马海燕"
+                android:text="张越"
                 android:textColor="#ffffff"
                 android:textSize="21sp"
                 android:textStyle="bold" />
@@ -81,7 +81,7 @@
                 android:layout_alignLeft="@+id/username"
                 android:layout_below="@+id/address"
                 android:layout_marginTop="5dp"
-                android:text="钢琴，乐理"
+                android:text="架子鼓，声乐"
                 android:textColor="#ffffff"
                 android:textSize="15sp" />
             
@@ -134,7 +134,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/bio_title"
-                android:text="马海燕，钢琴演奏家，专业钢琴、乐理教师，1994年获国家级优秀教学成果奖，1996获中国音协钢琴学会颁发的优秀中国作品奖。其多名学生凭钢琴专业以及优秀成绩保送借读于丘吉尔音乐学院、京城音乐学院、山北艺术学院等高等学院。"
+                android:text="歌手，架子鼓演奏家，专业架子鼓、声乐教师，1999 年成立哈哈镜乐团，曾多次以鼓手及主唱角色随乐团参加国内外大型演出。
+
+轻松愉快的上课氛围，科学合理的练习计划，正确的引导学员活跃的思维方式，最大限度的开发学员的潜能，帮助他们在有限的时间内得到进步。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>
@@ -161,7 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/edu_title"
-                android:text="1988年毕业于京城音乐学院钢琴系，现京城音乐学院钢琴系教授，中国音协钢琴学会成员，华北青年乐团成员。"
+                android:text="1996年毕业于山北音乐学院音乐系,中国音乐家协会打击乐学会会员。"
                 android:textColor="#a6a6a6"
                 android:textSize="15sp" />
         </RelativeLayout>

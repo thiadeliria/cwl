@@ -41,7 +41,7 @@ public class Login extends ActionBarActivity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_login);
 
-		login = (Button) findViewById(R.id.login_button);
+//		login = (Button) findViewById(R.id.login_button);
 		signUp = (Button) findViewById(R.id.sign_up);
 		usrText = (EditText) findViewById(R.id.username_input);
 		pwdText = (EditText) findViewById(R.id.password_input);
