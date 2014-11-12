@@ -17,7 +17,7 @@ import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 import android.widget.Toast;
 
-public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
+public class MainActivityS extends FragmentActivity implements ActionBar.TabListener {
 	public static Context appContext;
 
 	List<Fragment> frags;
@@ -33,12 +33,13 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		setContentView(R.layout.viewpager);
 
 		initView();
-		//vp.setOffscreenPageLimit(2);
+		
 		// ActionBar is initiated
 		actionBar = getActionBar();
 
 		// Declaration a ViewPager
 		vp = (ViewPager) findViewById(R.id.viewpager);
+		vp.setOffscreenPageLimit(2);
 		
 		// Tell the ActionBar we want to use Tabs
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -47,19 +48,29 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 //		ActionBar.Tab homepageTab = actionBar.newTab().setText(R.string.homePage);
 //		ActionBar.Tab profileTab = actionBar.newTab().setText(R.string.personalPage);
 //		ActionBar.Tab notifTab = actionBar.newTab().setText(R.string.msgs);
+<<<<<<< HEAD:src/com/example/cwl/MainActivity.java
 //		ActionBar.Tab settingsTab = actionBar.newTab().setText(R.string.settings);
 		ActionBar.Tab homepageTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_home);
 		ActionBar.Tab profileTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_profile);
 		ActionBar.Tab notifTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_notif);
 		ActionBar.Tab settingsTab = actionBar.newTab().setIcon(R.drawable.ic_actionbar_settings);
 
+=======
+//		ActionBar.Tab settingsTab = actionBar.newTab().setText(R.string.settins);
+		
+		ActionBar.Tab homepageTab = actionBar.newTab().setIcon(R.drawable.ic_home);
+		ActionBar.Tab profileTab = actionBar.newTab().setIcon(R.drawable.ic_profile);
+		ActionBar.Tab notifTab = actionBar.newTab().setIcon(R.drawable.ic_notif);
+		ActionBar.Tab settingsTab = actionBar.newTab().setIcon(R.drawable.ic_settings);
+		
+>>>>>>> 379124397edcb32a6873c553ca14a8d4235f593c:src/com/example/cwl/MainActivityS.java
 		// set the Tab listener. Now we can listen for clicks
 		homepageTab.setTabListener(this);
 		profileTab.setTabListener(this);
 		notifTab.setTabListener(this);
 		settingsTab.setTabListener(this);
 
-		// add the tabs to the action bar
+		// add the two tabs to the action bar
 		actionBar.addTab(homepageTab);
 		actionBar.addTab(profileTab);
 		actionBar.addTab(notifTab);
@@ -104,10 +115,10 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 		frags = new ArrayList<Fragment>();
 
 		// create the 4 fragments to display content
-		homepageFragment = new HomepageFragment();
-		profileFragment = new ProfileFragment();
-		notifFragment = new NotifFragment();
-		settingsFragment = new SettingsFragment();
+		homepageFragment = new FragmentHomepageS();
+		profileFragment = new FragmentProfileS();
+		notifFragment = new FragmentNotifyS();
+		settingsFragment = new FragmentSettingsS();
 
 		frags.add(homepageFragment);
 		frags.add(profileFragment);
@@ -118,7 +129,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 	FragmentPagerAdapter pagerAdapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
 		@Override
-		public Fragment getItem(int position) {
+		public Fragment getItem(int  position) {
 			return frags.get(position);
 		}
 
@@ -132,12 +143,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	@Override
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
 		// TODO Auto-generated method stub
-		vp.setCurrentItem(tab.getPosition());
 	}
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
 		// TODO Auto-generated method stub
+		vp.setCurrentItem(tab.getPosition());
 	}
 
 	@Override
